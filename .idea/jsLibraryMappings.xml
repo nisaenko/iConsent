@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{iConsent node_modules}" />
     <file url="PROJECT" libraries="{angular-agility-DefinitelyTyped, angular-bootstrap-lightbox-DefinitelyTyped, angular-file-upload-DefinitelyTyped, angular-hotkeys-DefinitelyTyped, angular-http-auth-DefinitelyTyped, angular-local-storage-DefinitelyTyped, angular-notify-DefinitelyTyped, angular-protractor-DefinitelyTyped, angular-scenario-DefinitelyTyped, angular-spinner-DefinitelyTyped, angular-translate-DefinitelyTyped, angular-ui-DefinitelyTyped, angular-ui-bootstrap-DefinitelyTyped, angularLocalStorage-DefinitelyTyped, angularfire-DefinitelyTyped, angularjs-DefinitelyTyped, body-parser-DefinitelyTyped, express-DefinitelyTyped, express-jwt-DefinitelyTyped, express-myconnection-DefinitelyTyped, express-partials-DefinitelyTyped, express-session-DefinitelyTyped, express-unless-DefinitelyTyped, express-validator-DefinitelyTyped, mongodb-DefinitelyTyped, mongoose-DefinitelyTyped, mongoose-mock-DefinitelyTyped}" />
   </component>
 </project>
