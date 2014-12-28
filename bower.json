@@ -1,0 +1,21 @@
+{
+  "name": "iConsent",
+  "version": "0.0.1",
+  "homepage": "https://github.com/nisaenko/iConsent",
+  "authors": [
+    "nisaenko <natasha.isaenko@gmail.com>"
+  ],
+  "description": "Electronic Consent Management System",
+  "main": "?",
+  "keywords": [
+    "?"
+  ],
+  "license": "AGPL v.3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
