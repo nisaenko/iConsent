@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="angular-agility-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-bootstrap-lightbox-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-file-upload-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-hotkeys-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-http-auth-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-local-storage-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-notify-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-protractor-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-scenario-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-spinner-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-translate-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-ui-bootstrap-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angular-ui-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angularfire-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angularjs-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="angularLocalStorage-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="body-parser-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-jwt-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-myconnection-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-partials-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-session-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-unless-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-validator-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="mongodb-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="mongoose-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="mongoose-mock-DefinitelyTyped" level="application" />
+  </component>
+</module>
