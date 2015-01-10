@@ -1,0 +1,33 @@
+[{
+
+  "firstName": "Superman",
+  "middleName": "Batman-middle",
+  "lastName": "Yoda",
+  "dateOfBirth": "Yoda",
+  "registrationDate": "Yoda",
+  "address": "Yoda"
+}, {
+
+  "firstName": "Foo",
+  "middleName": "Batman-middle",
+  "lastName": "Whateveryournameis",
+  "dateOfBirth": "Yoda",
+  "registrationDate": "Yoda",
+  "address": "Yoda"
+}, {
+  "middleName": "Batman-middle",
+  "firstName": "Toto",
+  "lastName": "Titi",
+  "dateOfBirth": "Yoda",
+  "registrationDate": "Yoda",
+  "address": "Yoda"
+}, {
+  "middleName": "Batman-middle",
+  "firstName": "Luke",
+  "lastName": "Kyle",
+  "dateOfBirth": "Yoda",
+  "registrationDate": "Yoda",
+  "address": "Yoda"
+}
+
+]
