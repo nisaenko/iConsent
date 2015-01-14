@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="datatablesSampleApp">
+<head>
+    <script src="/datatables/media/js/jquery.js"></script>
+    <script src="/datatables/media/js/jquery.dataTables.js"></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-datatables/dist/angular-datatables.js"></script>
+    <script src="/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/js/app1.js"></script>
+    <link href="/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+<div ng-controller="BindAngularDirectiveCtrl">
+    <p class="text-danger"><strong>{{ message }}</strong></p>
+    <br>
+    <table datatable="" dt-options="dtOptions" dt-columns="dtColumns" class="row-border hover"></table>
+</div>
+</body>
+</html>

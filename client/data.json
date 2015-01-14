@@ -1,5 +1,5 @@
 [{
-
+  "id": 501,
   "firstName": "Superman",
   "middleName": "Batman-middle",
   "lastName": "Yoda",
@@ -7,7 +7,7 @@
   "registrationDate": "Yoda",
   "address": "Yoda"
 }, {
-
+  "id": 502,
   "firstName": "Foo",
   "middleName": "Batman-middle",
   "lastName": "Whateveryournameis",
@@ -15,6 +15,7 @@
   "registrationDate": "Yoda",
   "address": "Yoda"
 }, {
+  "id": 503,
   "middleName": "Batman-middle",
   "firstName": "Toto",
   "lastName": "Titi",
@@ -22,6 +23,7 @@
   "registrationDate": "Yoda",
   "address": "Yoda"
 }, {
+  "id": 504,
   "middleName": "Batman-middle",
   "firstName": "Luke",
   "lastName": "Kyle",
