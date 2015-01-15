@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+
+	<title>Editor example - Basic initialisation</title>
+	<link rel="stylesheet" type="text/css" href="/datatables/media/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="/datatables/extensions/TableTools/css/dataTables.tableTools.css">
+	<link rel="stylesheet" type="text/css" href="/datatables/extensions/Editor-1.3.3/css/dataTables.editor.css">
+	<link rel="stylesheet" type="text/css" href="/datatables/examples/resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="/datatables/examples/resources/demo.css">
+	<style type="text/css" class="init">
+
+	</style>
+	<script type="text/javascript" language="javascript" src="/datatables/media/js/jquery.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/media/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/extensions/TableTools/js/dataTables.tableTools.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-1.3.3/js/dataTables.editor.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/examples/resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/examples/resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-1.3.3/examples/resources/editor-demo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+
+
+
+var editor; // use a global for the submit and return data rendering in the examples
+
+$(document).ready(function() {
+	editor = new $.fn.dataTable.Editor( {
+		ajax: "/patients",
+		table: "#example",
+		fields: [ {
+				label: "First name:",
+				name: "first_name"
+			}, {
+				label: "Last name:",
+				name: "last_name"
+			}, {
+				label: "Position:",
+				name: "position"
+			}, {
+				label: "Office:",
+				name: "office"
+			}, {
+				label: "Extension:",
+				name: "extn"
+			}, {
+				label: "Start date:",
+				name: "start_date",
+				type: "date"
+			}, {
+				label: "Salary:",
+				name: "salary"
+			}
+		]
+	} );
+
+	$('#example').DataTable( {
+		dom: "Tfrtip",
+		ajax: "/patients",
+		columns: [
+			{ data: null, render: function ( data, type, row ) {
+				// Combine the first and last names into a single table field
+				return data.first_name+' '+data.last_name;
+			} },
+			{ data: "position" },
+			{ data: "office" },
+			{ data: "extn" },
+			{ data: "start_date" },
+			{ data: "salary", render: $.fn.dataTable.render.number( ',', '.', 0, '$' ) }
+		],
+		tableTools: {
+			sRowSelect: "os",
+			aButtons: [
+				{ sExtends: "editor_create", editor: editor },
+				{ sExtends: "editor_edit",   editor: editor },
+				{ sExtends: "editor_remove", editor: editor }
+			]
+		}
+	} );
+} );
+
+
+
+	</script>
+</head>
+
+<body class="dt-example">
+
+			<table id="example" class="display" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Extn.</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</thead>
+
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>Position</th>
+						<th>Office</th>
+						<th>Extn.</th>
+						<th>Start date</th>
+						<th>Salary</th>
+					</tr>
+				</tfoot>
+			</table>
+
+</body>
+</html>
