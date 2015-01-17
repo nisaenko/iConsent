@@ -18,17 +18,6 @@
 
     });
 
-angular.module('patientsApp', ['datatables']).controller('patientsTableCtrl', function ($scope, DTOptionsBuilder, DTColumnBuilder) {
-    $scope.dtOptions = DTOptionsBuilder
-        .fromSource('data.json')
-        // Add Bootstrap compatibility
-        .withBootstrap();
-    $scope.dtColumns = [
-        DTColumnBuilder.newColumn('firstName').withTitle('First name'),
-        DTColumnBuilder.newColumn('middleName').withTitle('Middle name'),
-        DTColumnBuilder.newColumn('lastName').withTitle('Last name'),
-        DTColumnBuilder.newColumn('dateOfBirth').withTitle('Date of birth'),
-        DTColumnBuilder.newColumn('registrationDate').withTitle('Registration date'),
-        DTColumnBuilder.newColumn('address').withTitle('Address')
-    ];
+angular.module('patientsApp', ['datatables']).controller('patientsTableCtrl', function ($scope, $window) {
+    $window.alert('You\'ve selected the alert tab!');
 });
