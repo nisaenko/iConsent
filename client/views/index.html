@@ -1,14 +1,13 @@
 <!doctype html>
-<html ng-app="iConsent">
+<html >
 <head>
     <link rel="stylesheet" type="text/css" href="/datatables/media/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="/datatables/extensions/TableTools/css/dataTables.tableTools.css">
     <link rel="stylesheet" type="text/css" href="/datatables/extensions/Editor-1.3.3/css/dataTables.editor.css">
     <link rel="stylesheet" type="text/css" href="/datatables/examples/resources/syntax/shCore.css">
     <link rel="stylesheet" type="text/css" href="/datatables/examples/resources/demo.css">
-    <style type="text/css" class="init">
+    <link rel="stylesheet" href="/jquery-ui/themes/excite-bike/jquery-ui.css">
 
-    </style>
     <script type="text/javascript" language="javascript" src="/datatables/media/js/jquery.js"></script>
     <script type="text/javascript" language="javascript" src="/datatables/media/js/jquery.dataTables.js"></script>
     <script type="text/javascript" language="javascript" src="/datatables/extensions/TableTools/js/dataTables.tableTools.js"></script>
@@ -16,10 +15,16 @@
     <script type="text/javascript" language="javascript" src="/datatables/examples/resources/syntax/shCore.js"></script>
     <script type="text/javascript" language="javascript" src="/datatables/examples/resources/demo.js"></script>
     <script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-1.3.3/examples/resources/editor-demo.js"></script>
-    <script src="/angular/angular.js"></script>
-    <script src="/js/app.js"></script>
+    <script type="text/javascript" language="javascript" src="/jquery-ui/jquery-ui.js"></script>
+
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs();
+        });
+    </script>
+
     <script type="text/javascript" language="javascript" class="init">
-        $.noConflict();
+
 
 
         var editor; // use a global for the submit and return data rendering in the examples
@@ -44,7 +49,8 @@
                     type: "date"
                 }, {
                     label: "Registration date:",
-                    name: "registrationDate"
+                    name: "registrationDate",
+                    type: "date"
                 }, {
                     label: "Adress:",
                     name: "address"
@@ -78,49 +84,50 @@
 
     </script>
 
-
 </head>
 <body>
 
-<div ng-controller="TabsMainCtrl">
+<div id="tabs">
+    <ul>
+        <li><a href="#patients">Patients</a></li>
+        <li><a href="#templates">Templates</a></li>
+        <li><a href="#consents">Consents</a></li>
+    </ul>
 
 
-    <tabset justified="true">
-        <tab heading="Patients" select="alertMe()">
-            <h1>
-            Patients
-            </h1>
-            <div ng-controller="patientsTableCtrl">
-                <table  id="example" class="display" cellspacing="0" width="100%">
-                    <thead>
-                    <tr>
-                        <th>First name</th>
-                        <th>Middle name</th>
-                        <th>Last name</th>
-                        <th>Date of birth</th>
-                        <th>Registration date</th>
-                        <th>Address</th>
-                    </tr>
-                    </thead>
+    <div id="patients">
+        <table id="example" class="display" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>First name</th>
+                <th>Middle name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Registration date</th>
+                <th>Address</th>
+            </tr>
+            </thead>
 
-                    <tfoot>
-                    <tr>
-                        <th>First name</th>
-                        <th>Middle name</th>
-                        <th>Last name</th>
-                        <th>Date of birth</th>
-                        <th>Registration date</th>
-                        <th>Address</th>
-                    </tr>
-                    </tfoot>
-                </table>
-            </div>
-        </tab>
-        <tab heading="Templates" >
-            Templates
-        </tab>
-        <tab heading="Consents" select="alertMe()">Consents</tab>
-    </tabset>
+            <tfoot>
+            <tr>
+                <th>First name</th>
+                <th>Middle name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Registration date</th>
+                <th>Address</th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div id="templates">
+        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+    </div>
+    <div id="consents">
+        <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+        <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+    </div>
+
 </div>
 </body>
 </html>
