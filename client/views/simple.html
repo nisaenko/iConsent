@@ -33,27 +33,25 @@ $(document).ready(function() {
 		table: "#example",
 		fields: [ {
 				label: "First name:",
-				name: "first_name"
+				name: "firstName"
+			}, {
+				label: "Middle name:",
+				name: "middleName"
+
 			}, {
 				label: "Last name:",
-				name: "last_name"
+				name: "lastName"
 			}, {
-				label: "Position:",
-				name: "position"
-			}, {
-				label: "Office:",
-				name: "office"
-			}, {
-				label: "Extension:",
-				name: "extn"
-			}, {
-				label: "Start date:",
-				name: "start_date",
+				label: "Date of birth:",
+				name: "dateOfBirth",
 				type: "date"
 			}, {
-				label: "Salary:",
-				name: "salary"
-			}
+				label: "Registration date:",
+				name: "registrationDate"
+			}, {
+			    label: "Adress:",
+			    name: "address"
+		}
 		]
 	} );
 
@@ -61,15 +59,12 @@ $(document).ready(function() {
 		dom: "Tfrtip",
 		ajax: "/patients",
 		columns: [
-			{ data: null, render: function ( data, type, row ) {
-				// Combine the first and last names into a single table field
-				return data.first_name+' '+data.last_name;
-			} },
-			{ data: "position" },
-			{ data: "office" },
-			{ data: "extn" },
-			{ data: "start_date" },
-			{ data: "salary", render: $.fn.dataTable.render.number( ',', '.', 0, '$' ) }
+			{ data: "firstName"},
+			{ data: "middleName" },
+			{ data: "lastName"},
+			{ data: "dateOfBirth" },
+			{ data: "registrationDate" },
+			{ data: "address" }
 		],
 		tableTools: {
 			sRowSelect: "os",
@@ -92,23 +87,23 @@ $(document).ready(function() {
 			<table id="example" class="display" cellspacing="0" width="100%">
 				<thead>
 					<tr>
-						<th>Name</th>
-						<th>Position</th>
-						<th>Office</th>
-						<th>Extn.</th>
-						<th>Start date</th>
-						<th>Salary</th>
+						<th>First name</th>
+						<th>Middle name</th>
+						<th>Last name</th>
+						<th>Date of birth</th>
+						<th>Registration date</th>
+						<th>Address</th>
 					</tr>
 				</thead>
 
 				<tfoot>
 					<tr>
-						<th>Name</th>
-						<th>Position</th>
-						<th>Office</th>
-						<th>Extn.</th>
-						<th>Start date</th>
-						<th>Salary</th>
+						<th>First name</th>
+						<th>Middle name</th>
+						<th>Last name</th>
+						<th>Date of birth</th>
+						<th>Registration date</th>
+						<th>Address</th>
 					</tr>
 				</tfoot>
 			</table>
