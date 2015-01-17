@@ -27,12 +27,12 @@
 
 
 
-        var editor; // use a global for the submit and return data rendering in the examples
+        var editor;
 
         $(document).ready(function() {
             editor = new $.fn.dataTable.Editor( {
                 ajax: "/patients",
-                table: "#example",
+                table: "#patients-table",
                 fields: [ {
                     label: "First name:",
                     name: "firstName"
@@ -58,7 +58,7 @@
                 ]
             } );
 
-            $('#example').DataTable( {
+            $('#patients-table').DataTable( {
                 dom: "Tfrtip",
                 ajax: "/patients",
                 columns: [
@@ -96,7 +96,7 @@
 
 
     <div id="patients">
-        <table id="example" class="display" cellspacing="0" width="100%">
+        <table id="patients-table" class="display" cellspacing="0" width="100%">
             <thead>
             <tr>
                 <th>First name</th>
