@@ -55,31 +55,41 @@
                 ]
             } );
 
+
+
             templatesEditor = new $.fn.dataTable.Editor( {
                 ajax: "/templates",
                 table: "#templates-table",
                 fields: [ {
-                    label: "First name:",
-                    name: "firstName"
+                    label: "Template Name:",
+                    name: "templateName"
                 }, {
-                    label: "Middle name:",
-                    name: "middleName"
+                    label: "Template Version:",
+                    name: "templateVersion",
+                    type: "readonly"
 
                 }, {
-                    label: "Last name:",
-                    name: "lastName"
+                    label: "Created By:",
+                    name: "createdBy",
+                    type: "readonly"
                 }, {
-                    label: "Date of birth:",
-                    name: "dateOfBirth",
-                    type: "date"
+                    label: "Creation Date:",
+                    name: "creationDate",
+                    type: "readonly"
                 }, {
-                    label: "Registration date:",
-                    name: "registrationDate",
-                    type: "date"
+                    label: "Updated By:",
+                    name: "updatedBy",
+                    type: "readonly"
                 }, {
-                    label: "Adress:",
-                    name: "address"
+                    label: "Date of Update:",
+                    name: "dateOfUpdate",
+                    type: "readonly"
+                }, {
+                    label: "Consent Form Template:",
+                    name: "consentFormTemplate",
+                    type: "textarea"
                 }
+
                 ]
             } );
 
@@ -108,12 +118,12 @@
                 dom: "Tfrtip",
                 ajax: "/templates",
                 columns: [
-                    { data: "firstName"},
-                    { data: "middleName" },
-                    { data: "lastName"},
-                    { data: "dateOfBirth" },
-                    { data: "registrationDate" },
-                    { data: "address" }
+                    { data: "templateName"},
+                    { data: "templateVersion" },
+                    { data: "createdBy"},
+                    { data: "creationDate" },
+                    { data: "updatedBy" },
+                    { data: "dateOfUpdate" }
                 ],
                 tableTools: {
                     sRowSelect: "os",
@@ -145,22 +155,22 @@
         <table id="patients-table" class="display" cellspacing="0" width="100%">
             <thead>
             <tr>
-                <th>First name</th>
-                <th>Middle name</th>
-                <th>Last name</th>
-                <th>Date of birth</th>
-                <th>Registration date</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Registration Date</th>
                 <th>Address</th>
             </tr>
             </thead>
 
             <tfoot>
             <tr>
-                <th>First name</th>
-                <th>Middle name</th>
-                <th>Last name</th>
-                <th>Date of birth</th>
-                <th>Registration date</th>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Registration Date</th>
                 <th>Address</th>
             </tr>
             </tfoot>
@@ -170,23 +180,23 @@
         <table id="templates-table" class="display" cellspacing="0" width="100%">
             <thead>
             <tr>
-                <th>First name</th>
-                <th>Middle name</th>
-                <th>Last name</th>
-                <th>Date of birth</th>
-                <th>Registration date</th>
-                <th>Address</th>
+                <th>Template Name</th>
+                <th>Template Version</th>
+                <th>Created By</th>
+                <th>Creation Date</th>
+                <th>Updated By</th>
+                <th>Date of Update</th>
             </tr>
             </thead>
 
             <tfoot>
             <tr>
-                <th>First name</th>
-                <th>Middle name</th>
-                <th>Last name</th>
-                <th>Date of birth</th>
-                <th>Registration date</th>
-                <th>Address</th>
+                <th>Template Name</th>
+                <th>Template Version</th>
+                <th>Created By</th>
+                <th>Creation Date</th>
+                <th>Updated By</th>
+                <th>Date of Update</th>
             </tr>
             </tfoot>
         </table>
