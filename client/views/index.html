@@ -16,23 +16,48 @@
     <script type="text/javascript" language="javascript" src="/js/app.js"></script>
     <script type="text/javascript" language="javascript" src="/js/datatable-editor.js"></script>
     <script type="text/javascript" language="javascript" src="/jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/tabs-init.js"></script>
 
-    <script>
-        $(function() {
-            $( "#tabs" ).tabs();
-        });
-    </script>
 
     <script type="text/javascript" language="javascript" class="init">
 
 
 
         var editor;
+        var templatesEditor;
 
         $(document).ready(function() {
             editor = new $.fn.dataTable.Editor( {
                 ajax: "/patients",
                 table: "#patients-table",
+                fields: [ {
+                    label: "First name:",
+                    name: "firstName"
+                }, {
+                    label: "Middle name:",
+                    name: "middleName"
+
+                }, {
+                    label: "Last name:",
+                    name: "lastName"
+                }, {
+                    label: "Date of birth:",
+                    name: "dateOfBirth",
+                    type: "date"
+                }, {
+                    label: "Registration date:",
+                    name: "registrationDate",
+                    type: "date"
+                }, {
+                    label: "Adress:",
+                    name: "address"
+                }
+                ]
+            } );
+
+            templatesEditor = new $.fn.dataTable.Editor( {
+                ajax: "/templates",
+                table: "#templates-table",
                 fields: [ {
                     label: "First name:",
                     name: "firstName"
@@ -75,6 +100,27 @@
                         { sExtends: "editor_create", editor: editor },
                         { sExtends: "editor_edit",   editor: editor },
                         { sExtends: "editor_remove", editor: editor }
+                    ]
+                }
+            } );
+
+            $('#templates-table').DataTable( {
+                dom: "Tfrtip",
+                ajax: "/templates",
+                columns: [
+                    { data: "firstName"},
+                    { data: "middleName" },
+                    { data: "lastName"},
+                    { data: "dateOfBirth" },
+                    { data: "registrationDate" },
+                    { data: "address" }
+                ],
+                tableTools: {
+                    sRowSelect: "os",
+                    aButtons: [
+                        { sExtends: "editor_create", editor: templatesEditor },
+                        { sExtends: "editor_edit",   editor: templatesEditor },
+                        { sExtends: "editor_remove", editor: templatesEditor }
                     ]
                 }
             } );
@@ -121,7 +167,29 @@
         </table>
     </div>
     <div id="templates">
-        <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+        <table id="templates-table" class="display" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+                <th>First name</th>
+                <th>Middle name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Registration date</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+
+            <tfoot>
+            <tr>
+                <th>First name</th>
+                <th>Middle name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Registration date</th>
+                <th>Address</th>
+            </tr>
+            </tfoot>
+        </table>
     </div>
     <div id="consents">
         <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
