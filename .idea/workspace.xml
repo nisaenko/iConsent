@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87df8184-ba76-419c-9355-c92f3537c752" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iConsent.iws" />
@@ -45,7 +39,7 @@
       <file leaf-file-name="datatables-init.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/js/datatables-init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.32352942" vertical-offset="2528" max-vertical-offset="3270">
+            <state vertical-scroll-proportion="5.3959274" vertical-offset="0" max-vertical-offset="3270">
               <caret line="159" column="23" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
               <folding />
             </state>
@@ -571,7 +565,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421630883129</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="angular-bootstrap module removed">
+      <created>1421631084589</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1421631084589</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -617,7 +617,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="bootstrap integration implemented" />
     <MESSAGE value="full bootstrap support added to index.html" />
     <MESSAGE value="karma and protractor integration added" />
     <MESSAGE value="angular integration added" />
@@ -642,7 +641,8 @@
     <MESSAGE value="select controls fixed on administration editor pop-up." />
     <MESSAGE value="angular-ui-bootstrap module removed" />
     <MESSAGE value="angular-ui module removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="angular-ui module removed" />
+    <MESSAGE value="angular-bootstrap module removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="angular-bootstrap module removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1018,7 +1018,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/js/datatables-init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.32352942" vertical-offset="2528" max-vertical-offset="3270">
+        <state vertical-scroll-proportion="5.3959274" vertical-offset="0" max-vertical-offset="3270">
           <caret line="159" column="23" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
           <folding />
         </state>
