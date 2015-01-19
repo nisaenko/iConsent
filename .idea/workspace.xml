@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87df8184-ba76-419c-9355-c92f3537c752" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/angular-bootstrap/ui-bootstrap.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iConsent.iws" />
@@ -559,7 +565,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421630661366</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="angular-ui module removed">
+      <created>1421630883129</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1421630883129</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -605,7 +617,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="bower integration implemented" />
     <MESSAGE value="bootstrap integration implemented" />
     <MESSAGE value="full bootstrap support added to index.html" />
     <MESSAGE value="karma and protractor integration added" />
@@ -630,7 +641,8 @@
     <MESSAGE value="administrations tab added. select controls are not working on editor." />
     <MESSAGE value="select controls fixed on administration editor pop-up." />
     <MESSAGE value="angular-ui-bootstrap module removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="angular-ui-bootstrap module removed" />
+    <MESSAGE value="angular-ui module removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="angular-ui module removed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
