@@ -5,8 +5,10 @@
 
 var editor;
 var templatesEditor;
+var administrationEditor;
 
 $(document).ready(function() {
+
     editor = new $.fn.dataTable.Editor( {
         ajax: "/patients",
         table: "#patients-table",
@@ -33,6 +35,27 @@ $(document).ready(function() {
             name: "address"
         }
         ]
+    } );
+
+    $('#patients-table').DataTable( {
+        dom: "Tfrtip",
+        ajax: "/patients",
+        columns: [
+            { data: "firstName"},
+            { data: "middleName" },
+            { data: "lastName"},
+            { data: "dateOfBirth" },
+            { data: "registrationDate" },
+            { data: "address" }
+        ],
+        tableTools: {
+            sRowSelect: "os",
+            aButtons: [
+                { sExtends: "editor_create", editor: editor },
+                { sExtends: "editor_edit",   editor: editor },
+                { sExtends: "editor_remove", editor: editor }
+            ]
+        }
     } );
 
 
@@ -73,27 +96,6 @@ $(document).ready(function() {
         ]
     } );
 
-    $('#patients-table').DataTable( {
-        dom: "Tfrtip",
-        ajax: "/patients",
-        columns: [
-            { data: "firstName"},
-            { data: "middleName" },
-            { data: "lastName"},
-            { data: "dateOfBirth" },
-            { data: "registrationDate" },
-            { data: "address" }
-        ],
-        tableTools: {
-            sRowSelect: "os",
-            aButtons: [
-                { sExtends: "editor_create", editor: editor },
-                { sExtends: "editor_edit",   editor: editor },
-                { sExtends: "editor_remove", editor: editor }
-            ]
-        }
-    } );
-
     $('#templates-table').DataTable( {
         dom: "Tfrtip",
         ajax: "/templates",
@@ -114,6 +116,95 @@ $(document).ready(function() {
             ]
         }
     } );
-} );
+
+    $.fn.dataTable.Editor.prototype.dependant = function ( parent, child, url ) {
+        var that = this;
+
+        $('select', this.field( parent ).node()).on( 'change', function () {
+            var data = {};
+            data[ parent ] = that.field( parent ).val();
+
+            $.ajax( {
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                data: data,
+                success: function ( json ) {
+                    that.field( child ).update( json );
+                }
+            } );
+        } );
+    };
+
+        administrationEditor = new $.fn.dataTable.Editor( {
+            ajax: "/users",
+            table: "#administration-table",
+            fields: [ {
+                label: "User ID:",
+                name: "userID"
+            }, {
+                label: "User Name:",
+                name: "userName"
+
+            }, {
+                label: "Password:",
+                name: "password",
+                type: "password"
+            }, {
+                label: "Email:",
+                name: "email"
+            }, {
+                label: "Role:",
+                name: "role",
+                type: "select",
+                options: [
+                    { label: "Clinical Research Coordinator", value: 0},
+                    { label: "Administrator", value: 1}
+                ]
+            }, {
+                label: "Status:",
+                name: "status",
+                type: "select",
+                options: [
+                    { label: "Active", value: 1 },
+                    { label: "Inactive", value: 0 }
+                ]
+            }
+            ]
+        } );
+
+    $('#administration-table').DataTable( {
+        dom: "Tfrtip",
+        ajax: "/users",
+        columns: [
+            { data: "userID"},
+            { data: "userName" },
+            { data: "email"},
+            {
+                "class": "center",
+                "data": "role",
+                "render": function (val, type, row) {
+                    return val == 0 ? "Clinical Research Coordinator" : "Administrator";
+                }
+            },
+            {
+                "class": "center",
+                "data": "status",
+                "render": function (val, type, row) {
+                    return val == 0 ? "Inactive" : "Active";
+                }
+            }
+        ],
+        tableTools: {
+            sRowSelect: "os",
+            aButtons: [
+                { sExtends: "editor_create", editor: administrationEditor },
+                { sExtends: "editor_edit",   editor: administrationEditor },
+                { sExtends: "editor_remove", editor: administrationEditor }
+            ]
+        }
+    } );
+
+});
 
 
