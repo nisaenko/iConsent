@@ -787,9 +787,9 @@ app.post('/users', function(req, res) {
         "DT_RowId": "row_58",
         "userID": "Donna",
         "userName": "Snider",
-        "role": 0,
+        "role": "0",
         "email": "d.snider@datatables.net",
-        "status": 1,
+        "status": "1",
         "password": "12345"
     });
 });
@@ -804,31 +804,30 @@ app.get('/users', function(req, res){
                     "DT_RowId": "row_1",
                     "userID": "Tiger",
                     "userName": "Nixon",
-                    "role": 0,
+                    "role": "0",
                     "email": "t.nixon@datatables.net",
-                    "status": 0,
+                    "status": "0",
                     "password": "12345"
                 },
                 {
                     "DT_RowId": "row_2",
                     "userID": "Garrett",
                     "userName": "Winters",
-                    "role": 1,
+                    "role": "1",
                     "email": "g.winters@datatables.net",
-                    "status": 1,
+                    "status": "1",
                     "password": "12345"
                 },
                 {
                     "DT_RowId": "row_3",
                     "userID": "Ashton",
                     "userName": "Cox",
-                    "role": 0,
+                    "role": "0",
                     "email": "a.cox@datatables.net",
-                    "status": 1,
+                    "status": "1",
                     "password": "12345"
                 }
-            ],
-            "options": []
+            ]
         }
     );
 });

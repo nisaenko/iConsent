@@ -157,7 +157,7 @@ $(document).ready(function() {
                 label: "Role:",
                 name: "role",
                 type: "select",
-                options: [
+                ipOpts: [
                     { label: "Clinical Research Coordinator", value: 0},
                     { label: "Administrator", value: 1}
                 ]
@@ -165,13 +165,15 @@ $(document).ready(function() {
                 label: "Status:",
                 name: "status",
                 type: "select",
-                options: [
+                ipOpts: [
                     { label: "Active", value: 1 },
                     { label: "Inactive", value: 0 }
                 ]
             }
             ]
         } );
+
+    administrationEditor.dependant( 'role', 'status', 'whatever' );
 
     $('#administration-table').DataTable( {
         dom: "Tfrtip",
