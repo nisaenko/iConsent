@@ -6,6 +6,7 @@
 var editor;
 var templatesEditor;
 var administrationEditor;
+var consentEditor;
 
 $(document).ready(function() {
 
@@ -203,6 +204,49 @@ $(document).ready(function() {
                 { sExtends: "editor_create", editor: administrationEditor },
                 { sExtends: "editor_edit",   editor: administrationEditor },
                 { sExtends: "editor_remove", editor: administrationEditor }
+            ]
+        }
+    } );
+
+
+
+    consentEditor = new $.fn.dataTable.Editor( {
+        ajax: "/consents",
+        table: "#consents-table",
+        fields: [ {
+            label: "Patient name:",
+            name: "patientName"
+        },{
+            label: "Template Name:",
+            name: "templateName"
+        }, {
+            label: "Created By:",
+            name: "createdBy",
+            type: "readonly"
+        }
+        ]
+    } );
+
+    //administrationEditor.dependant( 'role', 'status', 'whatever' );
+
+    $('#consents-table').DataTable( {
+        dom: "Tfrtip",
+        ajax: "/consents",
+        columns: [
+            { data: "firstName"},
+            { data: "middleName" },
+            { data: "lastName"},
+            { data: "templateName"},
+            { data: "templateVersion" },
+            { data: "creationDate" },
+            { data: "createdBy"}
+        ],
+        tableTools: {
+            sRowSelect: "os",
+            aButtons: [
+                { sExtends: "editor_create", editor: consentEditor },
+                { sExtends: "editor_edit",   editor: consentEditor },
+                { sExtends: "editor_remove", editor: consentEditor }
             ]
         }
     } );

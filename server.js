@@ -780,6 +780,60 @@ app.get('/templates', function(req, res){
     );
 });
 
+app.get('/consents', function(req, res){
+    console.log("get templates invoked");
+    res.json(
+        {
+            "data": [
+                {
+                    "DT_RowId": "row_1",
+                    "firstName": "Lael",
+                    "lastName": "Greer",
+                    "middleName": "Systems Administrator",
+                    "createdBy": "Nixon",
+                    "templateName": "System Architect",
+                    "templateVersion": "61",
+                    "creationDate": "2011-04-25"
+                },
+                {
+                    "DT_RowId": "row_2",
+                    "firstName": "Michael",
+                    "lastName": "Bruce",
+                    "middleName": "Javascript Developer",
+                    "createdBy": "Winters",
+                    "templateName": "Accountant",
+                    "templateVersion": "63",
+                    "creationDate": "2011-07-25"
+                },
+                {
+                    "DT_RowId": "row_3",
+                    "firstName": "Hermione",
+                    "lastName": "Butler",
+                    "middleName": "Regional Director",
+                    "createdBy": "Cox",
+                    "templateName": "Junior Technical Author",
+                    "templateVersion": "66",
+                    "creationDate": "2009-01-12"
+                }
+            ],
+            "options": []
+        }
+    );
+});
+
+app.post('/consents', function(req, res) {
+    console.log("post users invoked");
+    res.json({
+        "DT_RowId": "row_2",
+        "firstName": "Michael",
+        "lastName": "Bruce",
+        "middleName": "Javascript Developer",
+        "createdBy": "Winters",
+        "templateName": "Accountant",
+        "templateVersion": "63",
+        "creationDate": "2011-07-25"
+    });
+});
 
 app.post('/users', function(req, res) {
     console.log("post users invoked");
