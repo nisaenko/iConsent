@@ -10,6 +10,9 @@ var consentEditor;
 
 $(document).ready(function() {
 
+    $('#window').jqxWindow({ theme: "shinyblack", width: 250, height: 130, isModal: true });
+    $('#submit').jqxButton({ theme: "shinyblack" });
+
     editor = new $.fn.dataTable.Editor( {
         ajax: "/patients",
         table: "#patients-table",
