@@ -4,10 +4,35 @@
 var express = require('express');
     app = express();
 
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema,
+    passportLocalMongoose = require('passport-local-mongoose');
 
+var User = new Schema({});
+
+User.plugin(passportLocalMongoose);
+
+module.exports = mongoose.model('User', User);
+
+app.configure(function() {
+    app.use(express.static('public'));
+    app.use(express.cookieParser());
+    app.use(express.bodyParser());
+    app.use(express.session({ secret: 'keyboard cat' }));
+    app.use(passport.initialize());
+    app.use(passport.session());
+    app.use(app.router);
+});
 
 app.use(express.static('bower_components'));
 app.use(express.static('client'));
+
+
+app.post('/login',
+    passport.authenticate('local', { successRedirect: '/',
+        failureRedirect: '/login',
+        failureFlash: true })
+);
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/client/views/index.html');
@@ -834,6 +859,8 @@ app.post('/consents', function(req, res) {
         "creationDate": "2011-07-25"
     });
 });
+
+
 
 app.post('/users', function(req, res) {
     console.log("post users invoked");

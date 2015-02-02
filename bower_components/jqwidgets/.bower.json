@@ -1,0 +1,14 @@
+{
+  "name": "jqwidgets",
+  "homepage": "https://github.com/DimitarD/jQWidgets",
+  "_release": "fafac1a5ba",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fafac1a5ba52e7595be39876a72c5831e79df2bd"
+  },
+  "_source": "git://github.com/DimitarD/jQWidgets.git",
+  "_target": "*",
+  "_originalSource": "jqwidgets",
+  "_direct": true
+}
