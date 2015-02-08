@@ -9,10 +9,6 @@ var administrationEditor;
 var consentEditor;
 
 $(document).ready(function() {
-
-    $('#window').jqxWindow({ theme: "shinyblack", width: 250, height: 130, isModal: true });
-    $('#submit').jqxButton({ theme: "shinyblack" });
-
     editor = new $.fn.dataTable.Editor( {
         ajax: "/patients",
         table: "#patients-table",
@@ -39,27 +35,6 @@ $(document).ready(function() {
             name: "address"
         }
         ]
-    } );
-
-    $('#patients-table').DataTable( {
-        dom: "Tfrtip",
-        ajax: "/patients",
-        columns: [
-            { data: "firstName"},
-            { data: "middleName" },
-            { data: "lastName"},
-            { data: "dateOfBirth" },
-            { data: "registrationDate" },
-            { data: "address" }
-        ],
-        tableTools: {
-            sRowSelect: "os",
-            aButtons: [
-                { sExtends: "editor_create", editor: editor },
-                { sExtends: "editor_edit",   editor: editor },
-                { sExtends: "editor_remove", editor: editor }
-            ]
-        }
     } );
 
 
@@ -100,6 +75,27 @@ $(document).ready(function() {
         ]
     } );
 
+    $('#patients-table').DataTable( {
+        dom: "Tfrtip",
+        ajax: "/patients",
+        columns: [
+            { data: "firstName"},
+            { data: "middleName" },
+            { data: "lastName"},
+            { data: "dateOfBirth" },
+            { data: "registrationDate" },
+            { data: "address" }
+        ],
+        tableTools: {
+            sRowSelect: "os",
+            aButtons: [
+                { sExtends: "editor_create", editor: editor },
+                { sExtends: "editor_edit",   editor: editor },
+                { sExtends: "editor_remove", editor: editor }
+            ]
+        }
+    } );
+
     $('#templates-table').DataTable( {
         dom: "Tfrtip",
         ajax: "/templates",
@@ -121,6 +117,7 @@ $(document).ready(function() {
         }
     } );
 
+
     $.fn.dataTable.Editor.prototype.dependant = function ( parent, child, url ) {
         var that = this;
 
@@ -140,42 +137,42 @@ $(document).ready(function() {
         } );
     };
 
-        administrationEditor = new $.fn.dataTable.Editor( {
-            ajax: "/users",
-            table: "#administration-table",
-            fields: [ {
-                label: "User ID:",
-                name: "userID"
-            }, {
-                label: "User Name:",
-                name: "userName"
+    administrationEditor = new $.fn.dataTable.Editor( {
+        ajax: "/users",
+        table: "#administration-table",
+        fields: [ {
+            label: "User ID:",
+            name: "userID"
+        }, {
+            label: "User Name:",
+            name: "userName"
 
-            }, {
-                label: "Password:",
-                name: "password",
-                type: "password"
-            }, {
-                label: "Email:",
-                name: "email"
-            }, {
-                label: "Role:",
-                name: "role",
-                type: "select",
-                ipOpts: [
-                    { label: "Clinical Research Coordinator", value: 0},
-                    { label: "Administrator", value: 1}
-                ]
-            }, {
-                label: "Status:",
-                name: "status",
-                type: "select",
-                ipOpts: [
-                    { label: "Active", value: 1 },
-                    { label: "Inactive", value: 0 }
-                ]
-            }
+        }, {
+            label: "Password:",
+            name: "password",
+            type: "password"
+        }, {
+            label: "Email:",
+            name: "email"
+        }, {
+            label: "Role:",
+            name: "role",
+            type: "select",
+            ipOpts: [
+                { label: "Clinical Research Coordinator", value: 0},
+                { label: "Administrator", value: 1}
             ]
-        } );
+        }, {
+            label: "Status:",
+            name: "status",
+            type: "select",
+            ipOpts: [
+                { label: "Active", value: 1 },
+                { label: "Inactive", value: 0 }
+            ]
+        }
+        ]
+    } );
 
     administrationEditor.dependant( 'role', 'status', 'whatever' );
 
@@ -210,8 +207,6 @@ $(document).ready(function() {
             ]
         }
     } );
-
-
 
     consentEditor = new $.fn.dataTable.Editor( {
         ajax: "/consents",
@@ -254,6 +249,6 @@ $(document).ready(function() {
         }
     } );
 
-});
+} );
 
 
