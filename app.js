@@ -33,7 +33,7 @@ app.use(session({ keys: ['secretkey1', 'secretkey2', '...']}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.static(path.join(__dirname, 'bower_components')));
-app.use(express.static(path.join(__dirname, 'client')));
+//app.use(express.static(path.join(__dirname, 'client')));
 // Configure passport middleware
 app.use(passport.initialize());
 app.use(passport.session());
@@ -1645,7 +1645,9 @@ app.get('/examples', function(req, res){
 });
 
 
-
+if (app.get('env') === 'development') {
+    app.locals.pretty = true;
+}
 
 
 // catch 404 and forward to error handler
@@ -1656,6 +1658,7 @@ app.use(function(req, res, next) {
 });
 
 // error handlers
+
 
 // development error handler
 // will print stacktrace

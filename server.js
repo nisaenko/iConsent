@@ -7,10 +7,11 @@ var express = require('express');
 
 
 app.use(express.static('bower_components'));
-app.use(express.static('client'));
+//app.use(express.static('client'));
+app.use(express.static('public'));
 
 app.get('/', function(req, res){
-    res.sendFile(__dirname + '/client/views/index.html');
+    res.sendFile(__dirname + '/public/views/index.html');
 });
 
 app.get('/patients', function(req, res){
