@@ -10,7 +10,21 @@ var consentEditor;
 
 $(document).ready(function() {
     editor = new $.fn.dataTable.Editor( {
-        ajax: "/patients",
+        ajax: {
+            create: {
+                type: 'POST',
+                url:  'patients'
+            },
+            edit: {
+                type: 'PUT',
+                url:  'patients?id=_id_'
+            },
+            remove: {
+                type: 'DELETE',
+                url:  'patients?id=_id_'
+            }
+        },
+        idSrc: "_id",
         table: "#patients-table",
         fields: [ {
             label: "First name:",
@@ -78,6 +92,7 @@ $(document).ready(function() {
     $('#patients-table').DataTable( {
         dom: "Tfrtip",
         ajax: "/patients",
+        idSrc: "_id",
         columns: [
             { data: "firstName"},
             { data: "middleName" },

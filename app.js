@@ -69,6 +69,41 @@ app.get('/patients', function(req, res) {
 
 app.post('/patients', function(req, res) {
     console.log("post patients invoked");
+    console.log(req);
+    res.json({
+        "DT_RowId": "row_58",
+        "firstName": "Donna",
+        "lastName": "Snider",
+        "middleName": "Customer Support",
+        "address": "d.snider@datatables.net",
+        "office": "New York",
+        "extn": "4226",
+        "age": "27",
+        "registrationDate": "112000",
+        "dateOfBirth": "2011-01-25"
+    });
+});
+
+app.put('/patients', function(req, res) {
+    console.log("put patients invoked");
+    console.log(req);
+    res.json({
+        "DT_RowId": "row_58",
+        "firstName": "Donna",
+        "lastName": "Snider",
+        "middleName": "Customer Support",
+        "address": "d.snider@datatables.net",
+        "office": "New York",
+        "extn": "4226",
+        "age": "27",
+        "registrationDate": "112000",
+        "dateOfBirth": "2011-01-25"
+    });
+});
+
+app.delete('/patients', function(req, res) {
+    console.log("delete patients invoked");
+    console.log(req);
     res.json({
         "DT_RowId": "row_58",
         "firstName": "Donna",
