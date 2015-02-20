@@ -9,6 +9,7 @@ var Patient = new Schema({
     DT_RowId: String,
     firstName: String,
     middleName: String,
+    lastName: String,
     address: String,
     office: String,
     extn: Number,
