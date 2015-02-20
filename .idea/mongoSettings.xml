@@ -5,13 +5,13 @@
       <list>
         <ServerConfiguration>
           <option name="connectOnIdeStartup" value="true" />
-          <option name="label" value="consentdb" />
+          <option name="label" value="iconsent" />
           <option name="serverUrls">
             <list>
               <option value="localhost:27017" />
             </list>
           </option>
-          <option name="userDatabase" value="consentdb" />
+          <option name="userDatabase" value="iconsent" />
         </ServerConfiguration>
       </list>
     </option>
