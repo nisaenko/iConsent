@@ -54,7 +54,21 @@ $(document).ready(function() {
 
 
     templatesEditor = new $.fn.dataTable.Editor( {
-        ajax: "/templates",
+        ajax: {
+            create: {
+                type: 'POST',
+                url:  'templates'
+            },
+            edit: {
+                type: 'PUT',
+                url:  'templates?id=_id_'
+            },
+            remove: {
+                type: 'DELETE',
+                url:  'templates?id=_id_'
+            }
+        },
+        idSrc: "_id",
         table: "#templates-table",
         fields: [ {
             label: "Template Name:",

@@ -64,20 +64,6 @@ $(document).ready( function () {
 
 			server.find('p').eq(0).html( 'The following script is used by DataTables and Editor to process the data requests sent by the client on the server-side.' );
 
-			$.ajax( {
-				url: '../resources/examples.php',
-				data: {
-					src: table.ajax.url() ||  '../php/staff-array.php'
-				},
-				dataType: 'text',
-				type: 'post',
-				success: function ( txt ) {
-					$('div.tabs > div.php').append(
-						'<code class="multiline brush: php;">'+txt+'</code>'
-					);
-					SyntaxHighlighter.highlight( {}, $('div.tabs div.php code')[0] );
-				}
-			} );
 	} );
 } );
 

@@ -141,6 +141,33 @@ app.post('/templates', function(req, res) {
     });
 });
 
+app.put('/templates', function(req, res) {
+    console.log("put templates invoked");
+    res.json({
+        "DT_RowId": "row_58",
+        "updatedBy": "Donna",
+        "createdBy": "Snider",
+        "templateName": "Customer Support",
+        "consentFormTemplate": "d.snider@datatables.net",
+        "templateVersion": "27",
+        "dateOfUpdate": "112000",
+        "creationDate": "2011-01-25"
+    });
+});
+
+app.delete('/templates', function(req, res) {
+    console.log("delete templates invoked");
+
+    console.log(req.param('id'));
+
+    Template.findById(req.param('id'), function (err, doc){
+        doc.remove();
+    });
+
+    res.json({
+    });
+});
+
 
 app.get('/consents', function(req, res){
     console.log("get templates invoked");
@@ -250,21 +277,6 @@ app.get('/users', function(req, res){
     );
 });
 
-app.post('/examples', function(req, res) {
-    console.log("examples");
-    res.json({
-        "DT_RowId": "row_1",
-        "first_name": "Tiger",
-        "last_name": "Nixon",
-        "position": "System Architect",
-        "email": "t.nixon@datatables.net",
-        "office": "Edinburgh",
-        "extn": "5421",
-        "age": "61",
-        "salary": "320800",
-        "start_date": "2011-04-25"
-    });
-});
 
 
 
