@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var Patient = new Schema({
-    _id: String,
+    //_id: String,
     DT_RowId: String,
     firstName: String,
     middleName: String,

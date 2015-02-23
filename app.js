@@ -86,7 +86,7 @@ app.post('/patients', function(req, res) {
 
 app.put('/patients', function(req, res) {
     console.log("put patients invoked");
-    console.log(req);
+
     res.json({
         "DT_RowId": "row_58",
         "firstName": "Donna",
@@ -103,19 +103,17 @@ app.put('/patients', function(req, res) {
 
 app.delete('/patients', function(req, res) {
     console.log("delete patients invoked");
-    console.log(req);
-    res.json({
-        "DT_RowId": "row_58",
-        "firstName": "Donna",
-        "lastName": "Snider",
-        "middleName": "Customer Support",
-        "address": "d.snider@datatables.net",
-        "office": "New York",
-        "extn": "4226",
-        "age": "27",
-        "registrationDate": "112000",
-        "dateOfBirth": "2011-01-25"
+
+    var deleteID = req.param('id');
+    var patients = 'patient';
+    console.log(deleteID);
+
+
+    Patient.findById(deleteID, function (err, doc){
+        doc.remove();
     });
+
+    res.json({});
 });
 
 app.get('/templates', function(req, res) {
