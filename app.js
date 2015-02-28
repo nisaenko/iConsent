@@ -12,7 +12,7 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var app = express();
 
-
+var jsonParser = bodyParser.json();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -67,21 +67,26 @@ app.get('/patients', function(req, res) {
 
 
 
-app.post('/patients', function(req, res) {
+app.post('/patients', jsonParser, function(req, res) {
     console.log("post patients invoked");
-    console.log(req);
-    res.json({
-        "DT_RowId": "row_58",
-        "firstName": "Donna",
-        "lastName": "Snider",
-        "middleName": "Customer Support",
-        "address": "d.snider@datatables.net",
-        "office": "New York",
-        "extn": "4226",
-        "age": "27",
-        "registrationDate": "112000",
-        "dateOfBirth": "2011-01-25"
+    console.log(req.body);
+    console.log(req.body['action']);
+    console.log(req.body['data[firstName]']);
+
+
+    var newPatient = new Patient();
+    newPatient.firstName = req.body['data[firstName]'];
+    newPatient.middleName = req.body['data[middleName]'];
+    newPatient.lastName = req.body['data[lastName]'];
+    newPatient.address = req.body['data[address]'];
+    newPatient.registrationDate = req.body['data[registrationDate]'];
+    newPatient.dateOfBirth = req.body['data[dateOfBirth]'];
+
+    newPatient.save(function (err) {
+        if (err) return console.error(err);
     });
+
+    res.json({ });
 });
 
 app.put('/patients', function(req, res) {
@@ -129,16 +134,13 @@ app.get('/templates', function(req, res) {
 
 app.post('/templates', function(req, res) {
     console.log("post templates invoked");
-    res.json({
-        "DT_RowId": "row_58",
-        "updatedBy": "Donna",
-        "createdBy": "Snider",
-        "templateName": "Customer Support",
-        "consentFormTemplate": "d.snider@datatables.net",
-        "templateVersion": "27",
-        "dateOfUpdate": "112000",
-        "creationDate": "2011-01-25"
-    });
+    console.log(req.json);
+    Template.create(req.json , function (err, small) {
+        if (err) return handleError(err);
+        // saved!
+    })
+
+    res.json({ });
 });
 
 app.put('/templates', function(req, res) {
