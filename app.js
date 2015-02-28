@@ -135,15 +135,28 @@ app.get('/templates', function(req, res) {
 });
 
 
-app.post('/templates', function(req, res) {
+app.post('/templates',jsonParser , function(req, res) {
     console.log("post templates invoked");
-    console.log(req.json);
-    Template.create(req.json , function (err, small) {
-        if (err) return handleError(err);
-        // saved!
-    })
+    console.log(req);
+    console.log(req.body);
+    console.log(req.user['username']);
 
-    res.json({ });
+    var newTemplate = new Template();
+
+    newTemplate.templateName = req.body['data[templateName]'];
+    newTemplate.templateVersion = 1;
+    newTemplate.createdBy = req.user['username'];
+    newTemplate.creationDate = Date.now();
+    newTemplate.updatedBy = req.user['username'];
+    newTemplate.dateOfUpdate = Date.now();
+    newTemplate.consentFormTemplate = req.body['data[consentFormTemplate]'];
+
+    newTemplate.save(function (err) {
+        if (err) return console.error(err);
+    });
+
+    res.json({});
+
 });
 
 app.put('/templates', function(req, res) {
