@@ -161,16 +161,26 @@ app.post('/templates',jsonParser , function(req, res) {
 
 app.put('/templates', function(req, res) {
     console.log("put templates invoked");
-    res.json({
-        "DT_RowId": "row_58",
-        "updatedBy": "Donna",
-        "createdBy": "Snider",
-        "templateName": "Customer Support",
-        "consentFormTemplate": "d.snider@datatables.net",
-        "templateVersion": "27",
-        "dateOfUpdate": "112000",
-        "creationDate": "2011-01-25"
+    console.log(req);
+    console.log(req.body);
+    console.log(req.user['username']);
+
+    Template.findById(req.param('id'), function (err, doc){
+
+        doc.templateName = req.body['data[templateName]'];
+        doc.templateVersion = Number(req.body['data[templateVersion]'])+1;
+        doc.updatedBy = req.user['username'];
+        doc.dateOfUpdate = Date.now();
+        doc.consentFormTemplate = req.body['data[consentFormTemplate]'];
+
+        doc.save(function (err) {
+            if (err) return console.error(err);
+        });
+
+        return res.end("{ \"data\": "+JSON.stringify(doc)+", \"options\":[] }");
     });
+
+
 });
 
 app.delete('/templates', function(req, res) {
