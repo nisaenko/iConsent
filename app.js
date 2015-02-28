@@ -89,32 +89,35 @@ app.post('/patients', jsonParser, function(req, res) {
     res.json({ });
 });
 
-app.put('/patients', function(req, res) {
+app.put('/patients',jsonParser, function(req, res) {
     console.log("put patients invoked");
+    console.log(req.param('id'));
+    console.log(req.body);
+    console.log(req.body['action']);
+    console.log(req.body['data[firstName]']);
 
-    res.json({
-        "DT_RowId": "row_58",
-        "firstName": "Donna",
-        "lastName": "Snider",
-        "middleName": "Customer Support",
-        "address": "d.snider@datatables.net",
-        "office": "New York",
-        "extn": "4226",
-        "age": "27",
-        "registrationDate": "112000",
-        "dateOfBirth": "2011-01-25"
+    Patient.findById(req.param('id'), function (err, doc){
+
+        doc.firstName = req.body['data[firstName]'];
+        doc.middleName = req.body['data[middleName]'];
+        doc.lastName = req.body['data[lastName]'];
+        doc.address = req.body['data[address]'];
+        doc.registrationDate = req.body['data[registrationDate]'];
+        doc.dateOfBirth = req.body['data[dateOfBirth]'];
+
+        doc.save(function (err) {
+            if (err) return console.error(err);
+        });
     });
+
+    res.json({});
 });
 
 app.delete('/patients', function(req, res) {
     console.log("delete patients invoked");
+    console.log(req.param('id'));
 
-    var deleteID = req.param('id');
-    var patients = 'patient';
-    console.log(deleteID);
-
-
-    Patient.findById(deleteID, function (err, doc){
+    Patient.findById(req.param('id'), function (err, doc){
         doc.remove();
     });
 
