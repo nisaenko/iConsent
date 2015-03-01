@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1bd0bbf-f228-4c47-9700-31a1946f2168" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/account.js" afterPath="$PROJECT_DIR$/models/account.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/datatables-init.js" afterPath="$PROJECT_DIR$/public/js/datatables-init.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iConsent.iws" />
@@ -382,7 +379,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425154356465</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="user account model updated, user management get handler updated. user creation server side handler updated.">
+      <created>1425176593557</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1425176593557</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -432,7 +435,8 @@
     <MESSAGE value="patient update handler has been completely implemented. Redundant variables have been removed from patient delete handler. Patient back end logic has been fully implemented." />
     <MESSAGE value="template creation action handler is implemented. this is minor problem because there is no refresh and data generated on server side is not being propagated until refresh." />
     <MESSAGE value="template update action handler is implemented. this is minor problem because there is no refresh and data generated on server side is not being propagated until refresh." />
-    <option name="LAST_COMMIT_MESSAGE" value="template update action handler is implemented. this is minor problem because there is no refresh and data generated on server side is not being propagated until refresh." />
+    <MESSAGE value="user account model updated, user management get handler updated. user creation server side handler updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="user account model updated, user management get handler updated. user creation server side handler updated." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
