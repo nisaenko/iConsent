@@ -57,6 +57,7 @@ var Template = require('./models/template');
 
 app.get('/patients', function(req, res) {
     console.log("get patients invoked");
+    console.log(req);
 
     var patients = 'patient';
 
@@ -69,6 +70,8 @@ app.get('/patients', function(req, res) {
 
 app.post('/patients', jsonParser, function(req, res) {
     console.log("post patients invoked");
+
+
     console.log(req.body);
     console.log(req.body['action']);
     console.log(req.body['data[firstName]']);

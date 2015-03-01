@@ -29,6 +29,9 @@ html
                 li
                     a(href="/logout") Log Out
         if (user)
-            include content.html
+            if (user.role == 1)
+                include admin.html
+            else
+                include content.html
         else
             p You are currently not logged in. Please login...
