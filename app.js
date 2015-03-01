@@ -54,6 +54,7 @@ app.use('/', require('./routes'));
 
 var Patient = require('./models/patient');
 var Template = require('./models/template');
+var Consent = require('./models/consent');
 
 app.get('/patients', function(req, res) {
     console.log("get patients invoked");
