@@ -271,7 +271,7 @@ $(document).ready(function() {
         ]
     } );
 
-    //administrationEditor.dependant( 'role', 'status', 'whatever' );
+    //administrationEditor.dependant( 'role', 'status', 'whatever' ); { sExtends: "editor_edit",   editor: consentEditor },
 
     $('#consents-table').DataTable( {
         dom: "Tfrtip",
@@ -289,7 +289,7 @@ $(document).ready(function() {
             sRowSelect: "os",
             aButtons: [
                 { sExtends: "editor_create", editor: consentEditor },
-                { sExtends: "editor_edit",   editor: consentEditor },
+
                 { sExtends: "editor_remove", editor: consentEditor }
             ]
         }
