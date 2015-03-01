@@ -256,6 +256,31 @@ app.post('/consents', function(req, res) {
 
 app.post('/users', function(req, res) {
     console.log("post users invoked");
+
+    console.log(req);
+    console.log(req.body);
+    console.log(req.user['username']);
+
+    var newAccount = new Account();
+    newAccount.username = req.body['data[username]'];
+    newAccount.name = req.body['data[name]'];
+    newAccount.email = req.body['data[email]'];
+    newAccount.role = req.body['data[role]'];
+    newAccount.status = req.body['data[status]'];
+
+    Account.register(newAccount, req.body['data[password]'], function(err) {
+        if (err) { console.log('error while user register!', err); return next(err); }
+
+        console.log('user registered!');
+
+    });
+
+    res.json({});
+});
+
+
+app.put('/users', function(req, res) {
+    console.log("put users invoked");
     res.json({
         "DT_RowId": "row_58",
         "userID": "Donna",
@@ -268,8 +293,31 @@ app.post('/users', function(req, res) {
 });
 
 
+app.delete('/users', function(req, res) {
+    console.log("delete users invoked");
+    res.json({
+        "DT_RowId": "row_58",
+        "userID": "Donna",
+        "userName": "Snider",
+        "role": "0",
+        "email": "d.snider@datatables.net",
+        "status": "1",
+        "password": "12345"
+    });
+});
+
 app.get('/users', function(req, res){
     console.log("get users invoked");
+
+    console.log("get templates invoked");
+
+    var accounts = 'account';
+
+    Account.find().lean().exec(function (err, accounts) {
+        return res.end("{ \"data\": "+JSON.stringify(accounts)+", \"options\":[] }");
+    });
+
+    /*
     res.json(
         {
             "data": [
@@ -302,7 +350,8 @@ app.get('/users', function(req, res){
                 }
             ]
         }
-    );
+    );*/
+
 });
 
 

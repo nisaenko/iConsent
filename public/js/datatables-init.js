@@ -128,6 +128,7 @@ $(document).ready(function() {
     $('#templates-table').DataTable( {
         dom: "Tfrtip",
         ajax: "/templates",
+        idSrc: "_id",
         columns: [
             { data: "templateName"},
             { data: "templateVersion" },
@@ -168,13 +169,28 @@ $(document).ready(function() {
 
     administrationEditor = new $.fn.dataTable.Editor( {
         ajax: "/users",
+        ajax: {
+            create: {
+                type: 'POST',
+                url:  'users'
+            },
+            edit: {
+                type: 'PUT',
+                url:  'users?id=_id_'
+            },
+            remove: {
+                type: 'DELETE',
+                url:  'users?id=_id_'
+            }
+        },
         table: "#administration-table",
+        idSrc: "_id",
         fields: [ {
             label: "User ID:",
-            name: "userID"
+            name: "username"
         }, {
             label: "User Name:",
-            name: "userName"
+            name: "name"
 
         }, {
             label: "Password:",
@@ -208,9 +224,10 @@ $(document).ready(function() {
     $('#administration-table').DataTable( {
         dom: "Tfrtip",
         ajax: "/users",
+        idSrc: "_id",
         columns: [
-            { data: "userID"},
-            { data: "userName" },
+            { data: "username"},
+            { data: "name" },
             { data: "email"},
             {
                 "class": "center",
