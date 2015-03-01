@@ -281,15 +281,26 @@ app.post('/users', function(req, res) {
 
 app.put('/users', function(req, res) {
     console.log("put users invoked");
-    res.json({
-        "DT_RowId": "row_58",
-        "userID": "Donna",
-        "userName": "Snider",
-        "role": "0",
-        "email": "d.snider@datatables.net",
-        "status": "1",
-        "password": "12345"
+
+    Account.findById(req.param('id'), function (err, doc){
+        doc.remove();
     });
+
+    var newAccount = new Account();
+    newAccount.username = req.body['data[username]'];
+    newAccount.name = req.body['data[name]'];
+    newAccount.email = req.body['data[email]'];
+    newAccount.role = req.body['data[role]'];
+    newAccount.status = req.body['data[status]'];
+
+    Account.register(newAccount, req.body['data[password]'], function(err) {
+        if (err) { console.log('error while user register!', err); return next(err); }
+
+        console.log('user updated!');
+
+    });
+
+    res.json({ });
 });
 
 
