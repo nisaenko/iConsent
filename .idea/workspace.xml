@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1bd0bbf-f228-4c47-9700-31a1946f2168" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iConsent.iws" />
@@ -26,17 +27,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="3750" max-vertical-offset="6060">
-              <caret line="277" column="14" selection-start-line="277" selection-start-column="14" selection-end-line="277" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.39759037" vertical-offset="4335" max-vertical-offset="5535">
+              <caret line="300" column="11" selection-start-line="300" selection-start-column="11" selection-end-line="300" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="iconsent/iconsent/accounts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="iconsent/iconsent/accounts" pinned="false" current-in-tab="false">
         <entry file="mongo://iconsent/iconsent/accounts">
           <provider selected="true" editor-type-id="MongoData">
             <state />
@@ -385,7 +386,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425176593557</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="user account model updated, user management get handler updated. user creation server side handler updated.">
+      <created>1425176612849</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1425176612849</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -517,8 +524,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="3750" max-vertical-offset="6060">
-          <caret line="277" column="14" selection-start-line="277" selection-start-column="14" selection-end-line="277" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.39759037" vertical-offset="4335" max-vertical-offset="5535">
+          <caret line="300" column="11" selection-start-line="300" selection-start-column="11" selection-end-line="300" selection-end-column="11" />
           <folding />
         </state>
       </provider>

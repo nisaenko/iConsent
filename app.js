@@ -295,15 +295,14 @@ app.put('/users', function(req, res) {
 
 app.delete('/users', function(req, res) {
     console.log("delete users invoked");
-    res.json({
-        "DT_RowId": "row_58",
-        "userID": "Donna",
-        "userName": "Snider",
-        "role": "0",
-        "email": "d.snider@datatables.net",
-        "status": "1",
-        "password": "12345"
+
+    console.log(req.param('id'));
+
+    Account.findById(req.param('id'), function (err, doc){
+        doc.remove();
     });
+
+    res.json({});
 });
 
 app.get('/users', function(req, res){
@@ -317,40 +316,6 @@ app.get('/users', function(req, res){
         return res.end("{ \"data\": "+JSON.stringify(accounts)+", \"options\":[] }");
     });
 
-    /*
-    res.json(
-        {
-            "data": [
-                {
-                    "DT_RowId": "row_1",
-                    "userID": "Tiger",
-                    "userName": "Nixon",
-                    "role": "0",
-                    "email": "t.nixon@datatables.net",
-                    "status": "0",
-                    "password": "12345"
-                },
-                {
-                    "DT_RowId": "row_2",
-                    "userID": "Garrett",
-                    "userName": "Winters",
-                    "role": "1",
-                    "email": "g.winters@datatables.net",
-                    "status": "1",
-                    "password": "12345"
-                },
-                {
-                    "DT_RowId": "row_3",
-                    "userID": "Ashton",
-                    "userName": "Cox",
-                    "role": "0",
-                    "email": "a.cox@datatables.net",
-                    "status": "1",
-                    "password": "12345"
-                }
-            ]
-        }
-    );*/
 
 });
 
