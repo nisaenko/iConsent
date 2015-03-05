@@ -255,7 +255,21 @@ $(document).ready(function() {
     } );
 
     consentEditor = new $.fn.dataTable.Editor( {
-        ajax: "/consents",
+        ajax: {
+            create: {
+                type: 'POST',
+                url:  'consents'
+            },
+            edit: {
+                type: 'PUT',
+                url:  'consents?id=_id_'
+            },
+            remove: {
+                type: 'DELETE',
+                url:  'consents?id=_id_'
+            }
+        },
+        idSrc: "_id",
         table: "#consents-table",
         fields: [ {
             label: "Patient name:",

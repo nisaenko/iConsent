@@ -56,6 +56,31 @@ var Patient = require('./models/patient');
 var Template = require('./models/template');
 var Consent = require('./models/consent');
 
+
+
+app.get('/patients_combo', function(req, res) {
+    console.log("get patients combo invoked");
+    console.log(req);
+
+    var patients = 'patient';
+
+    Patient.find().lean().exec(function (err, patients) {
+        //return res.end("options: "+JSON.stringify(patients));
+        var pluginPatientArray = new Array();
+        var valueCounter=1;
+        patients.forEach(function(currentPatient) {
+            var arrayElement = new Object();
+            arrayElement.value = currentPatient._id;
+            arrayElement.text = currentPatient.firstName+" "+currentPatient.middleName+" "+currentPatient.lastName;
+            pluginPatientArray.push(arrayElement);
+            valueCounter++;
+        });
+        res.end("{options: "+JSON.stringify(pluginPatientArray)+"}");
+    });
+
+
+});
+
 app.get('/patients', function(req, res) {
     console.log("get patients invoked");
     console.log(req);
