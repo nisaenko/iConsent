@@ -153,6 +153,26 @@ app.delete('/patients', function(req, res) {
     res.json({});
 });
 
+app.get('/templates_combo', function(req, res) {
+    console.log("get templates combo invoked");
+
+    var templates = 'template';
+
+    Template.find().lean().exec(function (err, templates) {
+        var pluginTemplateArray = new Array();
+        var valueCounter=1;
+        templates.forEach(function(currentTemplate) {
+            var arrayElement = new Object();
+            arrayElement.value = currentTemplate._id;
+            arrayElement.text = currentTemplate.templateName;
+            pluginTemplateArray.push(arrayElement);
+            valueCounter++;
+        });
+        res.end("{options: "+JSON.stringify(pluginTemplateArray)+"}");
+    });
+
+});
+
 app.get('/templates', function(req, res) {
     console.log("get templates invoked");
 

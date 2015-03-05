@@ -6,7 +6,6 @@ var mongoose = require('mongoose'),
 
 var Template = new Schema({
 
-    DT_RowId: String,
     updatedBy: String,
     createdBy: String,
     templateName: String,
