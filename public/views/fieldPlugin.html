@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+
+	<title>Editor example - Custom field type plug-ins</title>
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/tabletools/2.2.3/css/dataTables.tableTools.css">
+	<link rel="stylesheet" type="text/css" href="/datatables/extensions/Editor-PHP-1.4.0/css/dataTables.editor.css">
+	<link rel="stylesheet" type="text/css" href="/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/shCore.css">
+	<link rel="stylesheet" type="text/css" href="/datatables/extensions/Editor-PHP-1.4.0/examples/resources/demo.css">
+    <link rel="stylesheet" type="text/css" href="/dhtmlxcombo/codebase/dhtmlxcombo.css"/>
+	<style type="text/css" class="init">
+
+	button.inputButton {
+		float: left;
+		text-align: center;
+		display: block;
+		cursor: pointer;
+		margin: 0 20px 10px 0;
+		padding: 6px 0;
+		background: #F8F8F8;
+		background: -webkit-gradient(linear, center bottom, center top, from(#CCC), to(white));
+		background: -moz-linear-gradient(top, white, #CCC);
+		background: linear-gradient(top, white, #CCC);
+		text-shadow: 0 1px 0 white;
+		border: 1px solid #999;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		box-shadow: 0px 0px 2px #999;
+		-moz-box-shadow: 0px 0px 2px #999;
+		-webkit-box-shadow: 0px 0px 2px #999;
+		width: 80px;
+	}
+
+	button.inputButton.selected {
+		font-weight: normal;
+		background: #02475A;
+		background: -webkit-gradient(linear, center bottom, center top, from(#777), to(#333));
+		background: -moz-linear-gradient(top, #333, #777);
+		background: linear-gradient(top, #333, #777);
+		box-shadow: inset 0px 0px 2px #222;
+		-moz-box-shadow: inset 0px 0px 2px #222;
+		-webkit-box-shadow: inset 0px 0px 2px #222;
+		color: white;
+		text-shadow: none;
+	}
+
+	</style>
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/tabletools/2.2.3/js/dataTables.tableTools.min.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/shCore.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-PHP-1.4.0/examples/resources/demo.js"></script>
+	<script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-PHP-1.4.0/examples/resources/editor-demo.js"></script>
+    <script src="/dhtmlxcombo/codebase/dhtmlxcombo.js"></script>
+	<script type="text/javascript" language="javascript" class="init">
+
+
+        var myCombo;
+
+        function doOnLoad() {
+
+            // JSON from server
+            myCombo = new dhtmlXCombo("combo_zone");
+            myCombo.load("/templates_combo", function(){
+                // callback
+            });
+
+
+        }
+
+var editor; // use a global for the submit and return data rendering in the examples
+
+// Our custom field type
+$.fn.dataTable.Editor.fieldTypes.todo = $.extend( true, {}, $.fn.dataTable.Editor.models.fieldType, {
+	"create": function ( conf ) {
+		var that = this;
+
+		conf._enabled = true;
+
+        var myCombo = new dhtmlXCombo("combo_zone");
+        myCombo.load("/templates_combo", function(){
+            // callback
+        });
+
+		// Create the elements to use for the input
+		conf._input = $('<div id="combo_zone" style="width:230px;"></div>')[0];
+
+
+
+		// Use the fact that we are called in the Editor instance's scope to call
+		// the API method for setting the value when needed
+		//$('button.inputButton', conf._input).click( function () {
+		//	if ( conf._enabled ) {
+		//		that.set( conf.name, $(this).attr('value') );
+		//	}
+
+        //			return false;
+		//} );
+
+		return conf._input;
+	},
+
+	"get": function ( conf ) {
+		return $('combo_zone', conf._input).attr('value');
+	},
+
+	"set": function ( conf, val ) {
+		//$('button.selected', conf._input).removeClass( 'selected' );
+		//$('button.inputButton[value='+val+']', conf._input).addClass('selected');
+	},
+
+	"enable": function ( conf ) {
+		conf._enabled = true;
+		$(conf._input).removeClass( 'disabled' );
+	},
+
+	"disable": function ( conf ) {
+		conf._enabled = false;
+		$(conf._input).addClass( 'disabled' );
+	}
+} );
+
+
+$(document).ready(function() {
+	editor = new $.fn.dataTable.Editor( {
+		ajax: "/todo",
+		table: "#example",
+		fields: [ {
+				label: "Item:",
+				name: "item"
+			}, {
+				label: "Status:",
+				name: "done",
+				type: "todo", // Using the custom field type
+				def: 0
+			}, {
+				label: "Priority:",
+				name: "priority",
+				type: "select",
+				options: [
+					{ label: "1 (highest)", value: "1" },
+					{ label: "2",           value: "2" },
+					{ label: "3",           value: "3" },
+					{ label: "4",           value: "4" },
+					{ label: "5 (lowest)",  value: "5" }
+				]
+			}
+		]
+	} );
+
+	$('#example').DataTable( {
+		dom: "Tfrtip",
+		ajax: "/todo",
+		columns: [
+			{ data: "priority", className: "center" },
+			{ data: "item" },
+			{ 
+				className: "center",
+				data: "done",
+				render: function (data, type, row) {
+					if ( type === 'display' || type === 'filter' ) {
+						// Filtering and display get the rendered string
+						return data == 0 ? "To do" : "Done";
+					}
+					// Otherwise just give the original data
+					return data;
+				}
+			}
+		],
+		tableTools: {
+			sRowSelect: "os",
+			aButtons: [
+				{ sExtends: "editor_create", editor: editor },
+				{ sExtends: "editor_edit",   editor: editor },
+				{ sExtends: "editor_remove", editor: editor }
+			]
+		}
+	} );
+} );
+
+
+
+	</script>
+</head>
+
+<body class="dt-example" >
+	<div class="container">
+		<section>
+			<h1>Editor example <span>Custom field type plug-ins</span></h1>
+
+
+
+			<table id="example" class="display" cellspacing="0" width="100%">
+				<thead>
+					<tr>
+						<th>Priority</th>
+						<th>Item</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+			</table>
+
+
+		</section>
+
+
+
+	</div>
+
+
+</body>
+</html>

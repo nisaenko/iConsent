@@ -2,9 +2,166 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1bd0bbf-f228-4c47-9700-31a1946f2168" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/auto.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/fieldPlugin.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/License_gpl_2.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/codebase/dhtmlxcombo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/codebase/dhtmlxcombo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/codebase/dhtmlxcombo_deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/codebase/imgs/dhxcombo_skyblue/dhxcombo_arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/codebase/imgs/dhxcombo_skyblue/dhxcombo_arrow_down_dis.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/codebase/imgs/dhxcombo_skyblue/dhxcombo_chbx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/01_init/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/01_init/01_init_on_page.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/01_init/02_init_from_select.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/01_init/03_object_api_init.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/01_init/04_in_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/01_init/05_in_grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/01_init/06_html_form_integration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/02_modes/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/02_modes/01_mode_checkboxes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/02_modes/02_mode_images.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/03_text_templates/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/03_text_templates/01_text_templates.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/03_text_templates/02_extra_data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/03_text_templates/03_change_template.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/01_from_script_single_option.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/02_from_script_array_of_array.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/03_from_script_array_of_objects.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/04_from_xml_server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/05_from_xml_string.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/06_from_json_server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/07_from_json_client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/04_opts_loading/08_from_json_string.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/05_usage/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/05_usage/01_skins.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/05_usage/02_free_text.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/05_usage/03_autocomplete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/05_usage/04_readonly.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/05_usage/05_options_css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/05_usage/06_unselect_option.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/01_filter_on_client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/02_filter_on_server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/03_filter_on_server_with_subload.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/04_ondynxls_usage.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/05_custom_filter.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/06_sorting_opts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/06_filtering_sorting/07_custom_filter_handler.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/07_events/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/07_events/01_onxls_onxle_callback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/07_events/02_onopen_onclose.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/07_events/03_onchange_onselectionchange.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/07_events/04_onfocus_onblur.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/07_events/05_oncheck.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/07_events/06_onkeypressed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/08_advanced/!!samples.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/08_advanced/01_grouping_combos.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/08_advanced/02_custom_checkbox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/08_advanced/03_creating_custom_item.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/08_advanced/04_custom_multiline_item.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/08_advanced/05_multicolumn_combo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/100000words.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/books/book_closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/combo_group.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/combo_group.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/complete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/complete_city.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data2_short.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_airports.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_airports.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_consoles.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_countries.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_countries.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_css.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_css.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_os.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/dump_post.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/austria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/belarus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/britain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/cameroon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/canada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/china.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/czech_republic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/denmark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/austria.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/belarus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/britain.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/cameroon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/canada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/china.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/czech_republic.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/denmark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/finland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/germany.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/hungary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/italy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/dis/us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/finland.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/germany.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/hungary.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/italy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags/us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags2/flag_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags2/flag_gray.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags2/flag_green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/flags2/flag_red.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/grid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/multicolumn_data.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/multicolumn_data.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/random_words.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/tree_def.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/skyblue/dhtmlxcombo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/skyblue/imgs/dhxcombo_skyblue/dhxcombo_arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/skyblue/imgs/dhxcombo_skyblue/dhxcombo_arrow_down_dis.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/skyblue/imgs/dhxcombo_skyblue/dhxcombo_chbx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/terrace/dhtmlxcombo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/terrace/imgs/dhxcombo_terrace/dhxcombo_arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/terrace/imgs/dhxcombo_terrace/dhxcombo_arrow_down_dis.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/terrace/imgs/dhxcombo_terrace/dhxcombo_chbx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/web/dhtmlxcombo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/web/imgs/dhxcombo_web/dhxcombo_arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/web/imgs/dhxcombo_web/dhxcombo_arrow_down_dis.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/skins/web/imgs/dhxcombo_web/dhxcombo_chbx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/dhtmlxcombo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/dhtmlxcombo_deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_skyblue/dhxcombo_arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_skyblue/dhxcombo_arrow_down_dis.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_skyblue/dhxcombo_chbx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_terrace/dhxcombo_arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_terrace/dhxcombo_arrow_down_dis.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_terrace/dhxcombo_chbx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_web/dhxcombo_arrow_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_web/dhxcombo_arrow_down_dis.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/imgs/dhxcombo_web/dhxcombo_chbx.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/skins/dhtmlxcombo_dhx_skyblue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/skins/dhtmlxcombo_dhx_terrace.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCombo/codebase/skins/dhtmlxcombo_dhx_web.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/dhtmlxCommon/codebase/dhtmlxcommon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/compile.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/compile_debug.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/conf/compressed_filename" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/conf/copyright" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/conf/stat_copy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/conf/stat_css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/conf/stat_depr" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/conf/stat_js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/lib_compiler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/dhtmlxcombo/sources/libCompiler/yui.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/json_server.html" afterPath="$PROJECT_DIR$/public/views/json_server.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/template.js" afterPath="$PROJECT_DIR$/models/template.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.min.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/datatables-init.js" afterPath="$PROJECT_DIR$/public/js/datatables-init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iConsent.iws" />
@@ -32,52 +189,20 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2318" max-vertical-offset="6435">
-              <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="6563" max-vertical-offset="7455">
+              <caret line="446" column="9" selection-start-line="446" selection-start-column="9" selection-end-line="446" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="json_server.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="json_server.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/json_server.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7535885" vertical-offset="60" max-vertical-offset="570">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="570">
+              <caret line="25" column="52" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_airports.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_airports.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/dhtmlxcombo/docs/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consent.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/consent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="345">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -86,51 +211,70 @@
       <file leaf-file-name="datatables-init.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3683" max-vertical-offset="4800">
-              <caret line="271" column="21" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4448" max-vertical-offset="4890">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <file leaf-file-name="login.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/login.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="630">
-              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/content.html">
+      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="675">
-              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="495">
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fieldPlugin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/fieldPlugin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2535" max-vertical-offset="3345">
+              <caret line="191" column="25" selection-start-line="191" selection-start-column="25" selection-end-line="191" selection-end-column="25" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
+                <marker date="1425691559000" expanded="true" signature="3889:3901" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/template.js">
+      <file leaf-file-name="auto.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/auto.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
+            <state vertical-scroll-proportion="-8.666667" vertical-offset="242" max-vertical-offset="1095">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patient.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/patient.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="405">
-              <caret line="20" column="52" selection-start-line="3" selection-start-column="0" selection-end-line="20" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2160">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.70023984" vertical-offset="98" max-vertical-offset="660">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -151,13 +295,16 @@
       <list>
         <option value="$PROJECT_DIR$/models/account.js" />
         <option value="$PROJECT_DIR$/views/admin.html" />
-        <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/views/content.html" />
         <option value="$PROJECT_DIR$/models/consent.js" />
-        <option value="$PROJECT_DIR$/public/js/datatables-init.js" />
         <option value="$PROJECT_DIR$/models/template.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/views/json_server.html" />
+        <option value="$PROJECT_DIR$/public/views/fieldPlugin.html" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/views/auto.html" />
+        <option value="$PROJECT_DIR$/public/js/datatables-init.js" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/views/index.jade" />
       </list>
     </option>
   </component>
@@ -193,7 +340,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,12 +460,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iConsent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iConsent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="bin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,11 +491,12 @@
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bower_components" />
       <recent name="$PROJECT_DIR$/public/views" />
+      <recent name="$PROJECT_DIR$/bower_components" />
       <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
@@ -481,7 +643,13 @@
       <option name="project" value="LOCAL" />
       <updated>1425597473408</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Server side of templates combo is implemented.">
+      <created>1425599091186</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1425599091186</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -490,21 +658,21 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39942938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25714287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25714287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39942938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -538,14 +706,15 @@
     <MESSAGE value="consent model added and initialized" />
     <MESSAGE value="edit button on the consent mode has been removed" />
     <MESSAGE value="combo box ajax control added. Server side of patient combo is implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="combo box ajax control added. Server side of patient combo is implemented." />
+    <MESSAGE value="Server side of templates combo is implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Server side of templates combo is implemented." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>97</line>
+          <line>98</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="1" />
@@ -553,6 +722,90 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="660">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6563" max-vertical-offset="7455">
+          <caret line="446" column="9" selection-start-line="446" selection-start-column="9" selection-end-line="446" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/json_server.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="570">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="5640">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/fieldPlugin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2535" max-vertical-offset="3345">
+          <caret line="191" column="25" selection-start-line="191" selection-start-column="25" selection-end-line="191" selection-end-column="25" />
+          <folding>
+            <marker date="1425691559000" expanded="true" signature="3889:3901" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/auto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2160">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="243" max-vertical-offset="660">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6180">
@@ -571,29 +824,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_airports.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/dhtmlxcombo/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/consent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="345">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,10 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="675">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -636,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="405">
           <caret line="20" column="52" selection-start-line="3" selection-start-column="0" selection-end-line="20" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,21 +971,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="675">
           <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
           <caret line="20" column="52" selection-start-line="3" selection-start-column="0" selection-end-line="20" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,41 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3683" max-vertical-offset="4800">
-          <caret line="271" column="21" selection-start-line="271" selection-start-column="21" selection-end-line="271" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/dhtmlxcombo/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="630">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/dhtmlxcombo/samples/dhtmlxCombo/common/data_airports.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,21 +1000,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/fieldPlugin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2535" max-vertical-offset="3345">
+          <caret line="191" column="25" selection-start-line="191" selection-start-column="25" selection-end-line="191" selection-end-column="25" />
+          <folding>
+            <marker date="1425691559000" expanded="true" signature="3889:3901" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2318" max-vertical-offset="6435">
-          <caret line="162" column="27" selection-start-line="162" selection-start-column="27" selection-end-line="162" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="6563" max-vertical-offset="7455">
+          <caret line="446" column="9" selection-start-line="446" selection-start-column="9" selection-end-line="446" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/views/json_server.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7535885" vertical-offset="60" max-vertical-offset="570">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="570">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="2160">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/auto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.666667" vertical-offset="242" max-vertical-offset="1095">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4448" max-vertical-offset="4890">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="495">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70023984" vertical-offset="98" max-vertical-offset="660">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,8 +7,13 @@ var editor;
 var templatesEditor;
 var administrationEditor;
 var consentEditor;
+var patientCombo;
+var templateCombo;
 
 $(document).ready(function() {
+
+
+
     editor = new $.fn.dataTable.Editor( {
         ajax: {
             create: {
@@ -274,6 +279,7 @@ $(document).ready(function() {
         fields: [ {
             label: "Patient name:",
             name: "patientName"
+
         },{
             label: "Template Name:",
             name: "templateName"
