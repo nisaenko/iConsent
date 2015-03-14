@@ -5,25 +5,65 @@
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
 
-	<title>Editor example - Dates (with jQuery UI datepicker)</title>
-	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<title>Editor example - Selectize</title>
 	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/tabletools/2.2.3/css/dataTables.tableTools.css">
-	<link rel="stylesheet" type="text/css" href="../../css/dataTables.editor.css">
-	<link rel="stylesheet" type="text/css" href="../resources/syntax/shCore.css">
-	<link rel="stylesheet" type="text/css" href="../resources/demo.css">
+    <link rel="stylesheet" type="text/css" href="/datatables/extensions/Editor-PHP-1.4.0/css/dataTables.editor.css">
+	<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.9.0/css/selectize.css">
+    <link rel="stylesheet" type="text/css" href="/css/syntax/shCore.css">
+    <link rel="stylesheet" type="text/css" href="/css/iconsent.css">
 	<style type="text/css" class="init">
 
 	</style>
 	<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" language="javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" language="javascript" src="//cdn.datatables.net/tabletools/2.2.3/js/dataTables.tableTools.min.js"></script>
-	<script type="text/javascript" language="javascript" src="../../js/dataTables.editor.js"></script>
-	<script type="text/javascript" language="javascript" src="../resources/syntax/shCore.js"></script>
-	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
-	<script type="text/javascript" language="javascript" src="../resources/editor-demo.js"></script>
+    <script type="text/javascript" language="javascript" src="/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.js"></script>
+	<script type="text/javascript" language="javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.9.0/js/standalone/selectize.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/syntax/shCore.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/app.js"></script>
+    <script type="text/javascript" language="javascript" src="/js/datatable-editor.js"></script>
+    <script type="text/javascript" language="javascript" src="/jquery-ui/jquery-ui.js"></script>
 	<script type="text/javascript" language="javascript" class="init">
+
+
+
+
+$.fn.dataTable.Editor.fieldTypes.autoComplete = {
+	"create": function ( conf ) {
+		conf._input = $('<input type="text" id="'+conf.id+'">')
+			.autocomplete( conf.opts || {} );
+
+		return conf._input[0];
+	},
+
+	"get": function ( conf ) {
+		return conf._input.val();
+	},
+
+	"set": function ( conf, val ) {
+		conf._input.val( val );
+	},
+
+	"enable": function ( conf ) {
+		conf._input.autocomplete( 'enable' );
+	},
+
+	"disable": function ( conf ) {
+		conf._input.autocomplete( 'disable' );
+	},
+
+	// Non-standard Editor method - custom to this plug-in
+	"node": function ( conf ) {
+		return conf._input;
+	},
+
+	"update": function ( conf, options ) {
+		conf._input.autocomplete( 'option', 'source', options );
+	}
+};
 
 
 
@@ -31,38 +71,36 @@ var editor; // use a global for the submit and return data rendering in the exam
 
 $(document).ready(function() {
 	editor = new $.fn.dataTable.Editor( {
-		"ajax": "../php/dates.php",
-		"table": "#example",
-		"fields": [ {
+		ajax: "../php/join.php",
+		table: "#example",
+		fields: [ {
 				label: "First name:",
-				name:  "first_name"
+				name: "users.first_name"
 			}, {
 				label: "Last name:",
-				name:  "last_name"
+				name: "users.last_name"
 			}, {
-				label:      "Updated date:",
-				name:       "updated_date",
-				type:       "date",
-				def:        function () { return new Date(); },
-				dateFormat: $.datepicker.ISO_8601
+				label: "Phone #:",
+				name: "users.phone"
 			}, {
-				label:      "Registered date:",
-				name:       "registered_date",
-				type:       "date",
-				def:        function () { return new Date(); },
-				dateFormat: 'D, d M y'
+				label: "Site:",
+				name: "users.site",
+				type: "autoComplete"
 			}
 		]
 	} );
 
 	$('#example').dataTable( {
 		dom: "Tfrtip",
-		ajax: "../php/dates.php",
+		ajax: {
+			url: "../php/join.php",
+			type: 'POST'
+		},
 		columns: [
-			{ data: "first_name" },
-			{ data: "last_name" },
-			{ data: "updated_date" },
-			{ data: "registered_date" }
+			{ data: "users.first_name" },
+			{ data: "users.last_name" },
+			{ data: "users.phone" },
+			{ data: "sites.name" }
 		],
 		tableTools: {
 			sRowSelect: "os",
@@ -77,38 +115,35 @@ $(document).ready(function() {
 
 
 
+
 	</script>
 </head>
 
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>Editor example <span>Dates (with jQuery UI datepicker)</span></h1>
+			<h1>Editor example <span>Selectize</span></h1>
 
-			<div class="info">
-				<p>Working with different field input types is a mainstay of Editor, and date inputs are no exception. Editing date fields is traditionally fairly complex due to
-				the number of formatting variations, however, Editor makes editing date fields trivial through its <a href=
-				"//editor.datatables.net/reference/field/date"><code class="field" title="Editor field type">date<span>E</span></code></a> field type.</p>
+			<div class="info"></div>
 
-				<p>The <a href="//editor.datatables.net/reference/field/date"><code class="field" title="Editor field type">date<span>E</span></code></a> type will use <a href=
-				"http://jqueryui.com">jQuery UI's date picker</a> if it is available on the page, or the HTML 5 <code>&lt;input type="date"&gt;</code> tag if jQuery UI is not
-				available. This example shows jQuery UI being used to present a comprehensive date picker, with formatting options.</p>
-
-				<p>This example show two date input fields in the table, both of which have a default value of today's date through the use of the <a href=
-				"//editor.datatables.net/reference/option/fields.def"><code class="option" title="Editor initialisation option">fields.def<span>E</span></code></a> option,
-				returning the current date, while each field uses a different display format through the <code>dateFormat</code> option of the <a href=
-				"//editor.datatables.net/reference/field/date"><code class="field" title="Editor field type">date<span>E</span></code></a> field type.</p>
-			</div>
-
-			<table cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%">
+			<table id="example" class="display" cellspacing="0" width="100%">
 				<thead>
 					<tr>
-						<th width="30%">First name</th>
-						<th width="20%">Last name</th>
-						<th width="18%">Updated date</th>
-						<th width="20%">Registered date</th>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Phone #</th>
+						<th>Location</th>
 					</tr>
 				</thead>
+
+				<tfoot>
+					<tr>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Phone #</th>
+						<th>Location</th>
+					</tr>
+				</tfoot>
 			</table>
 
 			<ul class="tabs">
@@ -121,42 +156,76 @@ $(document).ready(function() {
 
 			<div class="tabs">
 				<div class="js">
-					<p>The Javascript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">var editor; // use a global for the submit and return data rendering in the examples
+					<p>The Javascript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">$.fn.dataTable.Editor.fieldTypes.autoComplete = {
+	&quot;create&quot;: function ( conf ) {
+		conf._input = $('&lt;input type=&quot;text&quot; id=&quot;'+conf.id+'&quot;&gt;')
+			.autocomplete( conf.opts || {} );
+
+		return conf._input[0];
+	},
+
+	&quot;get&quot;: function ( conf ) {
+		return conf._input.val();
+	},
+
+	&quot;set&quot;: function ( conf, val ) {
+		conf._input.val( val );
+	},
+
+	&quot;enable&quot;: function ( conf ) {
+		conf._input.autocomplete( 'enable' );
+	},
+
+	&quot;disable&quot;: function ( conf ) {
+		conf._input.autocomplete( 'disable' );
+	},
+
+	// Non-standard Editor method - custom to this plug-in
+	&quot;node&quot;: function ( conf ) {
+		return conf._input;
+	},
+
+	&quot;update&quot;: function ( conf, options ) {
+		conf._input.autocomplete( 'option', 'source', options );
+	}
+};
+
+
+
+var editor; // use a global for the submit and return data rendering in the examples
 
 $(document).ready(function() {
 	editor = new $.fn.dataTable.Editor( {
-		&quot;ajax&quot;: &quot;../php/dates.php&quot;,
-		&quot;table&quot;: &quot;#example&quot;,
-		&quot;fields&quot;: [ {
+		ajax: &quot;../php/join.php&quot;,
+		table: &quot;#example&quot;,
+		fields: [ {
 				label: &quot;First name:&quot;,
-				name:  &quot;first_name&quot;
+				name: &quot;users.first_name&quot;
 			}, {
 				label: &quot;Last name:&quot;,
-				name:  &quot;last_name&quot;
+				name: &quot;users.last_name&quot;
 			}, {
-				label:      &quot;Updated date:&quot;,
-				name:       &quot;updated_date&quot;,
-				type:       &quot;date&quot;,
-				def:        function () { return new Date(); },
-				dateFormat: $.datepicker.ISO_8601
+				label: &quot;Phone #:&quot;,
+				name: &quot;users.phone&quot;
 			}, {
-				label:      &quot;Registered date:&quot;,
-				name:       &quot;registered_date&quot;,
-				type:       &quot;date&quot;,
-				def:        function () { return new Date(); },
-				dateFormat: 'D, d M y'
+				label: &quot;Site:&quot;,
+				name: &quot;users.site&quot;,
+				type: &quot;autoComplete&quot;
 			}
 		]
 	} );
 
 	$('#example').dataTable( {
 		dom: &quot;Tfrtip&quot;,
-		ajax: &quot;../php/dates.php&quot;,
+		ajax: {
+			url: &quot;../php/join.php&quot;,
+			type: 'POST'
+		},
 		columns: [
-			{ data: &quot;first_name&quot; },
-			{ data: &quot;last_name&quot; },
-			{ data: &quot;updated_date&quot; },
-			{ data: &quot;registered_date&quot; }
+			{ data: &quot;users.first_name&quot; },
+			{ data: &quot;users.last_name&quot; },
+			{ data: &quot;users.phone&quot; },
+			{ data: &quot;sites.name&quot; }
 		],
 		tableTools: {
 			sRowSelect: &quot;os&quot;,
@@ -173,11 +242,13 @@ $(document).ready(function() {
 
 					<ul>
 						<li><a href="//code.jquery.com/jquery-1.11.1.min.js">//code.jquery.com/jquery-1.11.1.min.js</a></li>
-						<li><a href="//code.jquery.com/ui/1.10.3/jquery-ui.js">//code.jquery.com/ui/1.10.3/jquery-ui.js</a></li>
 						<li><a href="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js">//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js</a></li>
 						<li><a href=
 						"//cdn.datatables.net/tabletools/2.2.3/js/dataTables.tableTools.min.js">//cdn.datatables.net/tabletools/2.2.3/js/dataTables.tableTools.min.js</a></li>
 						<li><a href="../../js/dataTables.editor.js">../../js/dataTables.editor.js</a></li>
+						<li><a href="//code.jquery.com/ui/1.10.3/jquery-ui.js">//code.jquery.com/ui/1.10.3/jquery-ui.js</a></li>
+						<li><a href=
+						"//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.9.0/js/standalone/selectize.js">//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.9.0/js/standalone/selectize.js</a></li>
 					</ul>
 				</div>
 
@@ -194,11 +265,13 @@ $(document).ready(function() {
 					<p>The following CSS library files are loaded for use in this example to provide the styling of the table:</p>
 
 					<ul>
-						<li><a href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css</a></li>
 						<li><a href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">//cdn.datatables.net/1.10.5/css/jquery.dataTables.css</a></li>
 						<li><a href=
 						"//cdn.datatables.net/tabletools/2.2.3/css/dataTables.tableTools.css">//cdn.datatables.net/tabletools/2.2.3/css/dataTables.tableTools.css</a></li>
 						<li><a href="../../css/dataTables.editor.css">../../css/dataTables.editor.css</a></li>
+						<li><a href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css</a></li>
+						<li><a href=
+						"//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.9.0/css/selectize.css">//cdnjs.cloudflare.com/ajax/libs/selectize.js/0.9.0/css/selectize.css</a></li>
 					</ul>
 				</div>
 
@@ -225,17 +298,17 @@ $(document).ready(function() {
 
 				<div class="toc">
 					<div class="toc-group">
-						<h3><a href="./index.html">Simple initialisation</a></h3>
-						<ul class="toc active">
-							<li><a href="./simple.html">Basic initialisation</a></li>
-							<li><a href="./fieldDefaults.html">Setting defaults</a></li>
-							<li><a href="./fieldTypes.html">Field types</a></li>
-							<li class="active"><a href="./dates.html">Dates (with jQuery UI datepicker)</a></li>
-							<li><a href="./i18n.html">Internationalisation</a></li>
-							<li><a href="./inTableControls.html">In table form controls</a></li>
-							<li><a href="./responsive.html">Responsive table extension</a></li>
-							<li><a href="./server-side-processing.html">Server-side processing</a></li>
-							<li><a href="./join.html">Join tables - working with multiple SQL tables</a></li>
+						<h3><a href="../simple/index.html">Simple initialisation</a></h3>
+						<ul class="toc">
+							<li><a href="../simple/simple.html">Basic initialisation</a></li>
+							<li><a href="../simple/fieldDefaults.html">Setting defaults</a></li>
+							<li><a href="../simple/fieldTypes.html">Field types</a></li>
+							<li><a href="../simple/dates.html">Dates (with jQuery UI datepicker)</a></li>
+							<li><a href="../simple/i18n.html">Internationalisation</a></li>
+							<li><a href="../simple/inTableControls.html">In table form controls</a></li>
+							<li><a href="../simple/responsive.html">Responsive table extension</a></li>
+							<li><a href="../simple/server-side-processing.html">Server-side processing</a></li>
+							<li><a href="../simple/join.html">Join tables - working with multiple SQL tables</a></li>
 						</ul>
 					</div>
 

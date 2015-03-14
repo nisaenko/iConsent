@@ -7,8 +7,7 @@ var editor;
 var templatesEditor;
 var administrationEditor;
 var consentEditor;
-var patientCombo;
-var templateCombo;
+
 
 $(document).ready(function() {
 
@@ -282,7 +281,34 @@ $(document).ready(function() {
 
         },{
             label: "Template Name:",
-            name: "templateName"
+            name: "templateName",
+            type: "autoComplete",
+            opts: {
+                   source: [
+                       "ActionScript",
+                       "AppleScript",
+                       "Asp",
+                       "BASIC",
+                       "C",
+                       "C++",
+                       "Clojure",
+                       "COBOL",
+                       "ColdFusion",
+                       "Erlang",
+                       "Fortran",
+                       "Groovy",
+                       "Haskell",
+                       "Java",
+                       "JavaScript",
+                       "Lisp",
+                       "Perl",
+                       "PHP",
+                       "Python",
+                       "Ruby",
+                       "Scala",
+                       "Scheme"
+             ]
+          }
         }, {
             label: "Created By:",
             name: "createdBy",
