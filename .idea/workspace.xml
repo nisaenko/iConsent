@@ -2,146 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1bd0bbf-f228-4c47-9700-31a1946f2168" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/autoComplete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/editor.autoComplete.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/json_server.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/ajax-loader-small.gif" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/ajax-loader-small.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/ajax-loader.gif" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/ajax-loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/calender.png" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/calender.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/close.png" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/close.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/shadow_left.png" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/shadow_left.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/shadow_right.png" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/images/shadow_right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Bootstrap.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Bootstrap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/DataTables.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/DataTables.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Database.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Editor.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Ext/Ext.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Ext/Ext.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Field.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Field.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Format.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Format.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Join.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Join.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Query.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Mysql/Query.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Mysql/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Oracle/Query.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Oracle/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Postgres/Query.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Postgres/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlite/Query.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlite/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlserver/Query.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlserver/Query.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/README.txt" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/REST.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/REST.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/Readme.txt" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/Readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Result.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Mysql/Result.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Mysql/Result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Oracle/Result.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Oracle/Result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Postgres/Result.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Postgres/Result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlite/Result.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlite/Result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlserver/Result.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Database/Driver/Sqlserver/Result.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/Syntax Highlighter license" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/Syntax Highlighter license" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Validate.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/Editor/Validate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/backNext.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/backNext.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/bootstrap.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/bubble.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/bubble.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/checkbox.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/checkbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/checkbox.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/checkbox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/clientValidation.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/clientValidation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/collection.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/collection.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/config.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/php/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/confirmClose.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/confirmClose.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/create.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/dataTables.editor.css" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/dataTables.editor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/dataTables.editor.min.css" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/dataTables.editor.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.min.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/js/dataTables.editor.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/datatables-init.js" afterPath="$PROJECT_DIR$/public/js/datatables-init.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/dates.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/dates.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/dates.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/dates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/deepObjects.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/deepObjects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/defaultOptions.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/defaultOptions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/demo.css" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/demo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/demo.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/dependentFields.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/dependentFields.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/plug-ins/displayController.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/plug-ins/displayController.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/duplicateButton.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/duplicateButton.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/edit.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/editIcon.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/editIcon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/editor-demo.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/editor-demo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/bootstrap/editor.bootstrap.css" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/bootstrap/editor.bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/bootstrap/editor.bootstrap.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/bootstrap/editor.bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/bootstrap/editor.bootstrap.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/bootstrap/editor.bootstrap.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.bubble.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.bubble.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.datatable.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.datatable.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.envelope.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.envelope.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.fields.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.fields.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.inline.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.inline.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/jqueryui/editor.jqueryui.css" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/jqueryui/editor.jqueryui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/jqueryui/editor.jqueryui.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/jqueryui/editor.jqueryui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.lightbox.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.lightbox.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.main.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.mixins.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.scss" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/css/scss/editor.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/envelope.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/envelope.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/envelopeInTable.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/envelopeInTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/examples.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/examples.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/exportButtons.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/exportButtons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/fieldDefaults.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/fieldDefaults.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/plug-ins/fieldPlugin.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/plug-ins/fieldPlugin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/fieldTypes.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/fieldTypes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/formOnlyData.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/formOnlyData.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/get.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/get.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/grouped.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/grouped.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/htmlTable.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/htmlTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/i18n.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/i18n.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/inTableControls.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/inTableControls.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/inTableControls.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/inTableControls.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/plug-ins/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/plug-ins/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/index.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/inline.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/inline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/join.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/join.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/join.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/join.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/join.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/join.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/joinArray.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/joinArray.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/joinArray.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/joinArray.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/joinLinkTable.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/joinLinkTable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/joinLinkTable.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/joinLinkTable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/joinSelf.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/joinSelf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/joinSelf.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/joinSelf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/jqueryui.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/jqueryui.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/jsonId.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/jsonId.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/jsonId.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/jsonId.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/localstorage.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/localstorage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/mysql.sql" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/mysql.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/options.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/options.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/options.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/options.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/postgres.sql" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/postgres.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/remove.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/remove.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/responsive.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/responsive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/responsive.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/responsive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/server-side-processing.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/server-side-processing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/shCore.css" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/shCore.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/shCore.js" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/resources/syntax/shCore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/simple.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/bubble-editing/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/simple.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/simple.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/simple/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/simple.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/standalone/simple.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/sqlite.sql" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/sqlite.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/sqlserver.sql" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/sql/sqlserver.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/stackedInputs.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/styling/stackedInputs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/staff-html.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/staff-html.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/staff-rest.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/rest/staff-rest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/staff.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/staff.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/standalone.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/standalone.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/submitButton.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/submitButton.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/tabControl.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/inline-editing/tabControl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/tableOnlyData.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/advanced/tableOnlyData.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/tableOnlyData.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/tableOnlyData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/todo.php" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/php/todo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/triggerButton.html" afterPath="$PROJECT_DIR$/bower_components/datatables/extensions/Editor-PHP-1.4.0/examples/api/triggerButton.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iConsent.iws" />
@@ -211,8 +72,8 @@
       <file leaf-file-name="datatables-init.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.15384616" vertical-offset="4358" max-vertical-offset="5280">
-              <caret line="286" column="19" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="19" />
+            <state vertical-scroll-proportion="3.036199" vertical-offset="3278" max-vertical-offset="5280">
+              <caret line="308" column="30" selection-start-line="308" selection-start-column="30" selection-end-line="308" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -782,12 +643,18 @@
       <option name="project" value="LOCAL" />
       <updated>1426280575022</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="autocomplete template name field added to consent.&#10;autocomplete plugin added">
+      <created>1426299741901</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1426299741901</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="29" y="28" width="1400" height="770" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -800,7 +667,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25714287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -842,7 +709,9 @@
     <MESSAGE value="Server side of templates combo is implemented." />
     <MESSAGE value="Register link removed as well we dhxcombo" />
     <MESSAGE value="dhxcombo dependencies removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="dhxcombo dependencies removed" />
+    <MESSAGE value="autocomplete template name field added to consent.&#10;autocomplete plugin added" />
+    <MESSAGE value="autocomplete array changed to structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="autocomplete array changed to structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1174,8 +1043,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.15384616" vertical-offset="4358" max-vertical-offset="5280">
-          <caret line="286" column="19" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="19" />
+        <state vertical-scroll-proportion="3.036199" vertical-offset="3278" max-vertical-offset="5280">
+          <caret line="308" column="30" selection-start-line="308" selection-start-column="30" selection-end-line="308" selection-end-column="30" />
           <folding />
         </state>
       </provider>
