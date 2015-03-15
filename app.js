@@ -136,8 +136,6 @@ app.get('/patient_lookup', function(req, res) {
     var patients = 'patient';
     var termSearch = new RegExp(req.param('term'), 'i');
 
-    //Patient.find({firstName: {$regex: termSearch}})
-
     Patient.find().or([{firstName: {$regex: termSearch}}, {middleName: {$regex: termSearch}}, {lastName: {$regex: termSearch}}])
         .lean().exec(function (err, patients) {
         var pluginPatientArray = new Array();
@@ -160,9 +158,11 @@ app.get('/template_lookup', function(req, res) {
     console.log("get templates combo invoked");
     console.log(req.param('term'));
 
+    var termSearch = new RegExp(req.param('term'), 'i');
+
     var templates = 'template';
 
-    Template.find().lean().exec(function (err, templates) {
+    Template.find({templateName: {$regex: termSearch}}).lean().exec(function (err, templates) {
         var pluginTemplateArray = new Array();
 
         templates.forEach(function(currentTemplate) {
