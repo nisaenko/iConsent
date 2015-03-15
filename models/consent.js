@@ -6,9 +6,8 @@ var mongoose = require('mongoose'),
 
 var Consent = new Schema({
 
-    firstName: String,
-    middleName: String,
-    lastName: String,
+
+    patientName: String,
     patient: Object,
     template: Object,
     templateName: String,

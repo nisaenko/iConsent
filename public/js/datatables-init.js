@@ -276,7 +276,7 @@ $(document).ready(function() {
         idSrc: "_id",
         table: "#consents-table",
         fields: [ {
-            label: "Patient name:",
+            label: "Patient Name:",
             name: "patientName"
 
         },{
@@ -284,30 +284,13 @@ $(document).ready(function() {
             name: "templateName",
             type: "autoComplete",
             opts: {
-                   source: [
-                       { value:"ActionScript", label:"ActionScript", id: "1"},
-                       { value:"AppleScript", label:"AppleScript",  id: "2"},
-                       { value:"Asp", label:"Asp", id: "3"},
-                       { value:"BASIC", label:"BASIC", id: "4"},
-                       { value:"C", label:"C", id: "5"},
-                       { value:"C++", label:"C++", id: "6"},
-                       { value:"Clojure", label:"Clojure", id: "7"},
-                       { value:"COBOL", label:"COBOL", id: "8"},
-                       { value:"ColdFusion", label:"ColdFusion", id: "9"},
-                       { value:"Erlang", label:"Erlang", id: "10"},
-                       { value:"Fortran", label:"Fortran", id: "11"},
-                       { value:"Groovy", label:"Groovy", id: "12"},
-                       { value:"Haskell", label:"Haskell", id: "13"},
-                       { value:"Java", label:"Java", id: "14"},
-                       { value:"JavaScript", label:"JavaScript", id: "15"},
-                       { value:"Lisp", label:"Lisp", id: "16"},
-                       { value:"Perl", label:"Perl", id: "17"},
-                       { value:"PHP", label:"PHP", id: "18"},
-                       { value:"Python", label:"Python", id: "19"},
-                       { value:"Ruby", label:"Ruby", id: "20"},
-                       { value:"Scala", label:"Scala", id: "21"},
-                       { value:"Scheme", label:"Scheme", id: "22"}
-             ]
+                   source: "template_lookup",
+                    minLength: 1,
+                    select: function( event, ui ) {
+                    log( ui.item ?
+                    "Selected: " + ui.item.value + " aka " + ui.item.id :
+                    "Nothing selected, input was " + this.value );
+                    }
           }
         }, {
             label: "Created By:",
@@ -323,9 +306,7 @@ $(document).ready(function() {
         dom: "Tfrtip",
         ajax: "/consents",
         columns: [
-            { data: "firstName"},
-            { data: "middleName" },
-            { data: "lastName"},
+            { data: "patientName"},
             { data: "templateName"},
             { data: "templateVersion" },
             { data: "creationDate" },
