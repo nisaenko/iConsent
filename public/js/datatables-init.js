@@ -277,7 +277,17 @@ $(document).ready(function() {
         table: "#consents-table",
         fields: [ {
             label: "Patient Name:",
-            name: "patientName"
+            name: "patientName",
+            type: "autoComplete",
+            opts: {
+                source: "patient_lookup",
+                minLength: 1,
+                select: function( event, ui ) {
+                    log( ui.item ?
+                    "Selected: " + ui.item.value + " aka " + ui.item.id :
+                    "Nothing selected, input was " + this.value );
+                }
+            }
 
         },{
             label: "Template Name:",

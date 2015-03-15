@@ -154,6 +154,28 @@ app.delete('/patients', function(req, res) {
     res.json({});
 });
 
+app.get('/patient_lookup', function(req, res) {
+    console.log("get patients combo invoked");
+
+    var patients = 'patient';
+
+    Patient.find().lean().exec(function (err, patients) {
+        var pluginPatientArray = new Array();
+
+        patients.forEach(function(currentPatient) {
+            var arrayElement = new Object();
+            arrayElement.id = currentPatient._id;
+            arrayElement.value = currentPatient.firstName +" "+currentPatient.middleName +" "+currentPatient.lastName;
+            arrayElement.label = currentPatient.firstName +" "+currentPatient.middleName +" "+currentPatient.lastName;
+            pluginPatientArray.push(arrayElement);
+
+        });
+        res.end(JSON.stringify(pluginPatientArray));
+    });
+
+});
+
+
 app.get('/template_lookup', function(req, res) {
     console.log("get templates combo invoked");
 
