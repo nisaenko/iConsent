@@ -57,31 +57,6 @@ var Template = require('./models/template');
 var Consent = require('./models/consent');
 
 
-
-app.get('/patients_combo', function(req, res) {
-    console.log("get patients combo invoked");
-    console.log(req);
-
-    var patients = 'patient';
-
-    Patient.find().lean().exec(function (err, patients) {
-        //return res.end("options: "+JSON.stringify(patients));
-        var pluginPatientArray = new Array();
-        var valueCounter=1;
-        patients.forEach(function(currentPatient) {
-            var arrayElement = new Object();
-            arrayElement.value = currentPatient._id;
-            arrayElement.text = currentPatient.firstName+" "+currentPatient.middleName+" "+currentPatient.lastName;
-            pluginPatientArray.push(arrayElement);
-            valueCounter++;
-        });
-        //res.end("{options: "+JSON.stringify(pluginPatientArray)+"}");
-        res.end(JSON.stringify(pluginPatientArray));
-    });
-
-
-});
-
 app.get('/patients', function(req, res) {
     console.log("get patients invoked");
     console.log(req);
@@ -156,10 +131,15 @@ app.delete('/patients', function(req, res) {
 
 app.get('/patient_lookup', function(req, res) {
     console.log("get patients combo invoked");
+    console.log(req.param('term'));
 
     var patients = 'patient';
+    var termSearch = new RegExp(req.param('term'), 'i');
 
-    Patient.find().lean().exec(function (err, patients) {
+    //Patient.find({firstName: {$regex: termSearch}})
+
+    Patient.find().or([{firstName: {$regex: termSearch}}, {middleName: {$regex: termSearch}}, {lastName: {$regex: termSearch}}])
+        .lean().exec(function (err, patients) {
         var pluginPatientArray = new Array();
 
         patients.forEach(function(currentPatient) {
@@ -178,6 +158,7 @@ app.get('/patient_lookup', function(req, res) {
 
 app.get('/template_lookup', function(req, res) {
     console.log("get templates combo invoked");
+    console.log(req.param('term'));
 
     var templates = 'template';
 
