@@ -161,14 +161,14 @@ app.get('/template_lookup', function(req, res) {
 
     Template.find().lean().exec(function (err, templates) {
         var pluginTemplateArray = new Array();
-        var valueCounter=1;
+
         templates.forEach(function(currentTemplate) {
             var arrayElement = new Object();
             arrayElement.id = currentTemplate._id;
             arrayElement.value = currentTemplate.templateName;
             arrayElement.label = currentTemplate.templateName;
             pluginTemplateArray.push(arrayElement);
-            valueCounter++;
+
         });
         res.end(JSON.stringify(pluginTemplateArray));
     });
