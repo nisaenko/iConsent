@@ -154,7 +154,7 @@ app.delete('/patients', function(req, res) {
     res.json({});
 });
 
-app.get('/templates_combo', function(req, res) {
+app.get('/template_lookup', function(req, res) {
     console.log("get templates combo invoked");
 
     var templates = 'template';
@@ -164,12 +164,13 @@ app.get('/templates_combo', function(req, res) {
         var valueCounter=1;
         templates.forEach(function(currentTemplate) {
             var arrayElement = new Object();
-            arrayElement.value = currentTemplate._id;
-            arrayElement.text = currentTemplate.templateName;
+            arrayElement.id = currentTemplate._id;
+            arrayElement.value = currentTemplate.templateName;
+            arrayElement.label = currentTemplate.templateName;
             pluginTemplateArray.push(arrayElement);
             valueCounter++;
         });
-        res.end("{options: "+JSON.stringify(pluginTemplateArray)+"}");
+        res.end(JSON.stringify(pluginTemplateArray));
     });
 
 });
@@ -317,40 +318,6 @@ app.delete('/consents', function(req, res) {
         "creationDate": "2011-07-25"
     });
 });
-
-
-app.get('/template_lookup', function(req, res){
-    console.log("get template lookup invoked");
-    res.json(
-         [
-                { value:"ActionScript", label:"ActionScript", id: "1"},
-                { value:"AppleScript", label:"AppleScript",  id: "2"},
-                { value:"Asp", label:"Asp", id: "3"},
-                { value:"BASIC", label:"BASIC", id: "4"},
-                { value:"C", label:"C", id: "5"},
-                { value:"C++", label:"C++", id: "6"},
-                { value:"Clojure", label:"Clojure", id: "7"},
-                { value:"COBOL", label:"COBOL", id: "8"},
-                { value:"ColdFusion", label:"ColdFusion", id: "9"},
-                { value:"Erlang", label:"Erlang", id: "10"},
-                { value:"Fortran", label:"Fortran", id: "11"},
-                { value:"Groovy", label:"Groovy", id: "12"},
-                { value:"Haskell", label:"Haskell", id: "13"},
-                { value:"Java", label:"Java", id: "14"},
-                { value:"JavaScript", label:"JavaScript", id: "15"},
-                { value:"Lisp", label:"Lisp", id: "16"},
-                { value:"Perl", label:"Perl", id: "17"},
-                { value:"PHP", label:"PHP", id: "18"},
-                { value:"Python", label:"Python", id: "19"},
-                { value:"Ruby", label:"Ruby", id: "20"},
-                { value:"Scala", label:"Scala", id: "21"},
-                { value:"Scheme", label:"Scheme", id: "22"}
-            ]
-
-
-    );
-});
-
 
 
 app.post('/users', function(req, res) {

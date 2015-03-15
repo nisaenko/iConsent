@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1bd0bbf-f228-4c47-9700-31a1946f2168" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/autoComplete.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/consent.js" afterPath="$PROJECT_DIR$/models/consent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/content.html" afterPath="$PROJECT_DIR$/views/content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/datatables-init.js" afterPath="$PROJECT_DIR$/public/js/datatables-init.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iConsent.iws" />
@@ -31,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4823" max-vertical-offset="7170">
-              <caret line="349" column="0" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.033936653" vertical-offset="4800" max-vertical-offset="6675">
+              <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datatables-init.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="datatables-init.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54298645" vertical-offset="4065" max-vertical-offset="4995">
+            <state vertical-scroll-proportion="0.0" vertical-offset="4065" max-vertical-offset="4995">
               <caret line="287" column="32" selection-start-line="287" selection-start-column="32" selection-end-line="287" selection-end-column="32" />
               <folding />
             </state>
@@ -135,8 +131,8 @@
         <option value="$PROJECT_DIR$/public/views/autoComplete.html" />
         <option value="$PROJECT_DIR$/models/consent.js" />
         <option value="$PROJECT_DIR$/views/content.html" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/js/datatables-init.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -637,7 +633,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426376942130</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="autocomplete ajax datasource implemented. Need to replace server side loopback with database code.">
+      <created>1426386971692</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1426386971692</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -655,7 +657,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25714287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -699,7 +701,8 @@
     <MESSAGE value="dhxcombo dependencies removed" />
     <MESSAGE value="autocomplete template name field added to consent.&#10;autocomplete plugin added" />
     <MESSAGE value="autocomplete array changed to structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="autocomplete array changed to structure" />
+    <MESSAGE value="autocomplete ajax datasource implemented. Need to replace server side loopback with database code." />
+    <option name="LAST_COMMIT_MESSAGE" value="autocomplete ajax datasource implemented. Need to replace server side loopback with database code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1006,18 +1009,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4823" max-vertical-offset="7170">
-          <caret line="349" column="0" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4065" max-vertical-offset="4995">
+          <caret line="287" column="32" selection-start-line="287" selection-start-column="32" selection-end-line="287" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54298645" vertical-offset="4065" max-vertical-offset="4995">
-          <caret line="287" column="32" selection-start-line="287" selection-start-column="32" selection-end-line="287" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.033936653" vertical-offset="4800" max-vertical-offset="6675">
+          <caret line="321" column="0" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
           <folding />
         </state>
       </provider>
