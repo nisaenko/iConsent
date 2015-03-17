@@ -258,6 +258,8 @@ $(document).ready(function() {
         }
     } );
 
+    var currentConsentTemplate;
+
     consentEditor = new $.fn.dataTable.Editor( {
         ajax: {
             create: {
@@ -283,9 +285,10 @@ $(document).ready(function() {
                 source: "patient_lookup",
                 minLength: 1,
                 select: function( event, ui ) {
-                    log( ui.item ?
+                    console.log( ui.item ?
                     "Selected: " + ui.item.value + " aka " + ui.item.id :
                     "Nothing selected, input was " + this.value );
+
                 }
             }
 
@@ -297,17 +300,36 @@ $(document).ready(function() {
                    source: "template_lookup",
                     minLength: 1,
                     select: function( event, ui ) {
-                    log( ui.item ?
-                    "Selected: " + ui.item.value + " aka " + ui.item.id :
-                    "Nothing selected, input was " + this.value );
+                        console.log( ui.item ?
+                        "Selected: " + ui.item.value + " aka " + ui.item.id :
+                        "Nothing selected, input was " + this.value );
+                        currentConsentTemplate = ui.item;
                     }
           }
+        }, {
+            label: "Template Version:",
+            name: "templateVersion",
+            type: "readonly"
+
         }, {
             label: "Created By:",
             name: "createdBy",
             type: "readonly"
+
+        }, {
+            label: "Creation Date:",
+            name: "creationDate",
+            type: "date"
+
         }
         ]
+    } );
+
+    consentEditor.dependent( 'templateName', function ( val, data, callback ) {
+
+        consentEditor.field( 'templateVersion' ).val(currentConsentTemplate.version);
+        consentEditor.field( 'createdBy' ).val(currentConsentTemplate.createdBy);
+        consentEditor.field( 'creationDate' ).val(Date.now());
     } );
 
     //administrationEditor.dependant( 'role', 'status', 'whatever' ); { sExtends: "editor_edit",   editor: consentEditor },
