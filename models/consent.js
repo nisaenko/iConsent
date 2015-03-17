@@ -13,7 +13,8 @@ var Consent = new Schema({
     templateName: String,
     templateVersion: Number,
     createdBy: Date,
-    creationDate: Date
+    creationDate: Date,
+    patientSignature: String
 });
 
 module.exports = mongoose.model('Consent', Consent);

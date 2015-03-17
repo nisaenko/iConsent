@@ -172,6 +172,7 @@ app.get('/template_lookup', function(req, res) {
             arrayElement.label = currentTemplate.templateName;
             arrayElement.version = currentTemplate.templateVersion;
             arrayElement.createdBy = req.user['username'];
+            arrayElement.consentFormTemplate = currentTemplate.consentFormTemplate;
             pluginTemplateArray.push(arrayElement);
 
         });

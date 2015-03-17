@@ -321,7 +321,16 @@ $(document).ready(function() {
             name: "creationDate",
             type: "date"
 
-        }
+        }, {
+            label: "Consent:",
+            name: "consentFormTemplate",
+            type: "textarea",
+            attr:{
+                readonly:""
+            }
+
+
+            }
         ]
     } );
 
@@ -330,6 +339,7 @@ $(document).ready(function() {
         consentEditor.field( 'templateVersion' ).val(currentConsentTemplate.version);
         consentEditor.field( 'createdBy' ).val(currentConsentTemplate.createdBy);
         consentEditor.field( 'creationDate' ).val(Date.now());
+        consentEditor.field( 'consentFormTemplate' ).val(currentConsentTemplate.consentFormTemplate);
     } );
 
     //administrationEditor.dependant( 'role', 'status', 'whatever' ); { sExtends: "editor_edit",   editor: consentEditor },
