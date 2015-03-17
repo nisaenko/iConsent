@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f1bd0bbf-f228-4c47-9700-31a1946f2168" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/consent.js" afterPath="$PROJECT_DIR$/models/consent.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/datatables-init.js" afterPath="$PROJECT_DIR$/public/js/datatables-init.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -29,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="6765">
-              <caret line="174" column="82" selection-start-line="174" selection-start-column="63" selection-end-line="174" selection-end-column="82" />
+            <state vertical-scroll-proportion="0.5090498" vertical-offset="4200" max-vertical-offset="6810">
+              <caret line="295" column="38" selection-start-line="295" selection-start-column="38" selection-end-line="295" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -69,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datatables-init.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="datatables-init.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42307693" vertical-offset="4733" max-vertical-offset="5625">
-              <caret line="328" column="27" selection-start-line="328" selection-start-column="27" selection-end-line="328" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="4763" max-vertical-offset="5715">
+              <caret line="336" column="28" selection-start-line="336" selection-start-column="28" selection-end-line="336" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -83,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/models/consent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -153,8 +152,8 @@
         <option value="$PROJECT_DIR$/public/views/autoComplete.html" />
         <option value="$PROJECT_DIR$/views/content.html" />
         <option value="$PROJECT_DIR$/models/consent.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/js/datatables-init.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -697,7 +696,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426565527932</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="consent text area read-only added">
+      <created>1426568067591</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1426568067591</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -766,7 +771,8 @@
     <MESSAGE value="patient autocomplete lookup server side code case insensetive search implemented." />
     <MESSAGE value="template autocomplete lookup server side code case insensetive search implemented." />
     <MESSAGE value="consent, field dependencies and auto-population have been implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="consent, field dependencies and auto-population have been implemented." />
+    <MESSAGE value="consent text area read-only added" />
+    <option name="LAST_COMMIT_MESSAGE" value="consent text area read-only added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1136,14 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/consent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/template.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
@@ -1152,18 +1150,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/models/consent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2325" max-vertical-offset="6765">
-          <caret line="174" column="82" selection-start-line="174" selection-start-column="63" selection-end-line="174" selection-end-column="82" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/datatables-init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42307693" vertical-offset="4733" max-vertical-offset="5625">
-          <caret line="328" column="27" selection-start-line="328" selection-start-column="27" selection-end-line="328" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="4763" max-vertical-offset="5715">
+          <caret line="336" column="28" selection-start-line="336" selection-start-column="28" selection-end-line="336" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5090498" vertical-offset="4200" max-vertical-offset="6810">
+          <caret line="295" column="38" selection-start-line="295" selection-start-column="38" selection-end-line="295" selection-end-column="38" />
           <folding />
         </state>
       </provider>

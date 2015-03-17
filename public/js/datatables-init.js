@@ -330,7 +330,13 @@ $(document).ready(function() {
             }
 
 
+            },
+            {
+                label: "Patient Electronic Signature:",
+                name: "patientSignature",
+                type: "text"
             }
+
         ]
     } );
 

@@ -291,6 +291,9 @@ app.get('/consents', function(req, res){
 
 app.post('/consents', function(req, res) {
     console.log("post users invoked");
+    console.log(req);
+    console.log(req.body);
+    console.log(req.user['username']);
     res.json({
         "DT_RowId": "row_2",
         "patientName": "Javascript Developer",
