@@ -288,6 +288,7 @@ $(document).ready(function() {
                     console.log( ui.item ?
                     "Selected: " + ui.item.value + " aka " + ui.item.id :
                     "Nothing selected, input was " + this.value );
+                    consentEditor.field( 'patientID' ).val(ui.item.id);
 
                 }
             }
@@ -304,8 +305,17 @@ $(document).ready(function() {
                         "Selected: " + ui.item.value + " aka " + ui.item.id :
                         "Nothing selected, input was " + this.value );
                         currentConsentTemplate = ui.item;
+                        consentEditor.field( 'templateID' ).val(ui.item.id);
                     }
           }
+        }, {
+            name: "patientID",
+            type: "hidden"
+
+        }, {
+            name: "templateID",
+            type: "hidden"
+
         }, {
             label: "Template Version:",
             name: "templateVersion",

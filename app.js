@@ -294,14 +294,28 @@ app.post('/consents', function(req, res) {
     console.log(req);
     console.log(req.body);
     console.log(req.user['username']);
-    res.json({
-        "DT_RowId": "row_2",
-        "patientName": "Javascript Developer",
-        "createdBy": "Winters",
-        "templateName": "Accountant",
-        "templateVersion": "63",
-        "creationDate": "2011-07-25"
+    var newConsent = new Consent();
+
+    newConsent.templateName = req.body['data[templateName]'];
+    newConsent.templateVersion = req.body['data[templateVersion]'];
+    newConsent.createdBy = req.user['username'];
+    newConsent.creationDate = req.body['data[creationDate]'];
+    newConsent.patientName = req.body['data[patientName]'];
+    newConsent.patientSignature = req.body['data[patientSignature]'];
+
+    Template.findById(req.body['data[templateID]'], function (err, doc){
+        newConsent.template = doc;
     });
+
+    Patient.findById(req.body['data[patientID]'], function (err, doc){
+        newConsent.patient = doc;
+    });
+
+    newConsent.save(function (err) {
+        if (err) return console.error(err);
+    });
+
+    res.json({});
 });
 
 app.put('/consents', function(req, res) {
