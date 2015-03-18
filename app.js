@@ -306,13 +306,13 @@ app.put('/consents', function(req, res) {
 
 app.delete('/consents', function(req, res) {
     console.log("delete users invoked");
+    console.log(req.param('id'));
+
+    Consent.findById(req.param('id'), function (err, doc){
+        doc.remove();
+    });
+
     res.json({
-        "DT_RowId": "row_2",
-        "patientName": "Javascript Developer",
-        "createdBy": "Winters",
-        "templateName": "Accountant",
-        "templateVersion": "63",
-        "creationDate": "2011-07-25"
     });
 });
 

@@ -30,8 +30,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4751132" vertical-offset="3263" max-vertical-offset="6630">
-              <caret line="261" column="61" selection-start-line="261" selection-start-column="61" selection-end-line="261" selection-end-column="61" />
+            <state vertical-scroll-proportion="-0.22171946" vertical-offset="4748" max-vertical-offset="6630">
+              <caret line="310" column="11" selection-start-line="310" selection-start-column="11" selection-end-line="310" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -713,7 +713,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426649690210</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="get consents server side loopback has been replaced with real database code">
+      <created>1426650125964</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1426650125964</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -759,8 +765,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="patient update handler has been completely implemented. Redundant variables have been removed from patient delete handler. Patient back end logic has been fully implemented." />
-    <MESSAGE value="template creation action handler is implemented. this is minor problem because there is no refresh and data generated on server side is not being propagated until refresh." />
     <MESSAGE value="template update action handler is implemented. this is minor problem because there is no refresh and data generated on server side is not being propagated until refresh." />
     <MESSAGE value="user account model updated, user management get handler updated. user creation server side handler updated." />
     <MESSAGE value="user account deletion handler implemented." />
@@ -784,7 +788,9 @@
     <MESSAGE value="consent text area read-only added" />
     <MESSAGE value="consent editor patient signature field added" />
     <MESSAGE value="save consent server side implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="save consent server side implemented" />
+    <MESSAGE value="get consents server side loopback has been replaced with real database code" />
+    <MESSAGE value="delete consents server side loopback has been replaced with real database code" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete consents server side loopback has been replaced with real database code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1180,8 +1186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4751132" vertical-offset="3263" max-vertical-offset="6630">
-          <caret line="261" column="61" selection-start-line="261" selection-start-column="61" selection-end-line="261" selection-end-column="61" />
+        <state vertical-scroll-proportion="-0.22171946" vertical-offset="4748" max-vertical-offset="6630">
+          <caret line="310" column="11" selection-start-line="310" selection-start-column="11" selection-end-line="310" selection-end-column="11" />
           <folding />
         </state>
       </provider>
