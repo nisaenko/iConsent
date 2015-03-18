@@ -256,37 +256,11 @@ app.delete('/templates', function(req, res) {
 
 app.get('/consents', function(req, res){
     console.log("get templates invoked");
-    res.json(
-        {
-            "data": [
-                {
-                    "DT_RowId": "row_1",
-                    "patientName": "Systems Administrator",
-                    "createdBy": "Nixon",
-                    "templateName": "System Architect",
-                    "templateVersion": "61",
-                    "creationDate": "2011-04-25"
-                },
-                {
-                    "DT_RowId": "row_2",
-                    "patientName": "Javascript Developer",
-                    "createdBy": "Winters",
-                    "templateName": "Accountant",
-                    "templateVersion": "63",
-                    "creationDate": "2011-07-25"
-                },
-                {
-                    "DT_RowId": "row_3",
-                    "patientName": "Regional Director",
-                    "createdBy": "Cox",
-                    "templateName": "Junior Technical Author",
-                    "templateVersion": "66",
-                    "creationDate": "2009-01-12"
-                }
-            ],
-            "options": []
-        }
-    );
+    var consents = 'consent';
+
+    Consent.find().lean().exec(function (err, consents) {
+        return res.end("{ \"data\": "+JSON.stringify(consents)+", \"options\":[] }");
+    });
 });
 
 app.post('/consents', function(req, res) {
