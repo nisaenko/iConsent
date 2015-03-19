@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 
 
+
     editor = new $.fn.dataTable.Editor( {
         ajax: {
             create: {
@@ -249,11 +250,19 @@ $(document).ready(function() {
             }
         ],
         tableTools: {
+            sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
             sRowSelect: "os",
             aButtons: [
-                { sExtends: "editor_create", editor: administrationEditor },
-                { sExtends: "editor_edit",   editor: administrationEditor },
-                { sExtends: "editor_remove", editor: administrationEditor }
+                { sExtends: "editor_create",sButtonText: "Add User Account", editor: administrationEditor },
+                { sExtends: "editor_edit", sButtonText: "Edit User Account",  editor: administrationEditor },
+                { sExtends: "editor_remove",sButtonText: "Delete User Account", editor: administrationEditor },
+                {
+                    sExtends: "collection",
+                    sButtonText: "Export to..",
+                    sButtonClass: "save-collection",
+                    aButtons: [ 'copy', 'csv', 'xls', 'pdf' ]
+                },
+                'print'
             ]
         }
     } );
@@ -361,7 +370,7 @@ $(document).ready(function() {
     //administrationEditor.dependant( 'role', 'status', 'whatever' ); { sExtends: "editor_edit",   editor: consentEditor },
 
     $('#consents-table').DataTable( {
-        dom: "Tfrtip",
+        dom: 'T<"clear">lfrtip',
         ajax: "/consents",
         columns: [
             { data: "patientName"},
@@ -371,14 +380,27 @@ $(document).ready(function() {
             { data: "createdBy"}
         ],
         tableTools: {
-            sRowSelect: "os",
-            aButtons: [
-                { sExtends: "editor_create", editor: consentEditor },
 
-                { sExtends: "editor_remove", editor: consentEditor }
+            sRowSelect: "os",
+            sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
+            aButtons: [
+                { sExtends: "editor_create",sButtonText: "Add Consent", editor: consentEditor },
+
+                { sExtends: "editor_remove",sButtonText: "Revoke Consent", editor: consentEditor },
+                {
+                    sExtends: "collection",
+                    sButtonText: "Export to..",
+                    sButtonClass: "save-collection",
+                    aButtons: [ 'copy', 'csv', 'xls', 'pdf' ]
+                },
+                'print'
+
             ]
+
         }
     } );
+
+
 
 } );
 
