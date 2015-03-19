@@ -11,9 +11,6 @@ var consentEditor;
 
 $(document).ready(function() {
 
-
-
-
     editor = new $.fn.dataTable.Editor( {
         ajax: {
             create: {
@@ -109,7 +106,7 @@ $(document).ready(function() {
     } );
 
     $('#patients-table').DataTable( {
-        dom: "Tfrtip",
+        dom: 'T<"clear">lfrtip',
         ajax: "/patients",
         idSrc: "_id",
         columns: [
@@ -124,9 +121,9 @@ $(document).ready(function() {
             sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
             sRowSelect: "os",
             aButtons: [
-                { sExtends: "editor_create", sButtonText: "Add Patient", editor: editor },
-                { sExtends: "editor_edit",  sButtonText: "Edit Patient", editor: editor },
-                { sExtends: "editor_remove", sButtonText: "Delete Patient", editor: editor },
+                { sExtends: "editor_create", editor: editor },
+                { sExtends: "editor_edit",   editor: editor },
+                { sExtends: "editor_remove", editor: editor },
                 {
                     sExtends: "collection",
                     sButtonText: "Export to..",
@@ -139,7 +136,7 @@ $(document).ready(function() {
     } );
 
     $('#templates-table').DataTable( {
-        dom: "Tfrtip",
+        dom: 'T<"clear">lfrtip',
         ajax: "/templates",
         idSrc: "_id",
         columns: [
@@ -154,9 +151,9 @@ $(document).ready(function() {
             sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
             sRowSelect: "os",
             aButtons: [
-                { sExtends: "editor_create",sButtonText: "Add Template", editor: templatesEditor },
-                { sExtends: "editor_edit", sButtonText: "Edit Template",  editor: templatesEditor },
-                { sExtends: "editor_remove",sButtonText: "Delete Template", editor: templatesEditor },
+                { sExtends: "editor_create", editor: templatesEditor },
+                { sExtends: "editor_edit",   editor: templatesEditor },
+                { sExtends: "editor_remove", editor: templatesEditor },
                 {
                     sExtends: "collection",
                     sButtonText: "Export to..",
@@ -243,7 +240,7 @@ $(document).ready(function() {
     administrationEditor.dependant( 'role', 'status', 'whatever' );
 
     $('#administration-table').DataTable( {
-        dom: "Tfrtip",
+        dom: 'T<"clear">lfrtip',
         ajax: "/users",
         idSrc: "_id",
         columns: [
@@ -269,9 +266,9 @@ $(document).ready(function() {
             sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
             sRowSelect: "os",
             aButtons: [
-                { sExtends: "editor_create",sButtonText: "Add User Account", editor: administrationEditor },
-                { sExtends: "editor_edit", sButtonText: "Edit User Account",  editor: administrationEditor },
-                { sExtends: "editor_remove",sButtonText: "Delete User Account", editor: administrationEditor },
+                { sExtends: "editor_create", editor: administrationEditor },
+                { sExtends: "editor_edit",   editor: administrationEditor },
+                { sExtends: "editor_remove", editor: administrationEditor },
                 {
                     sExtends: "collection",
                     sButtonText: "Export to..",
@@ -400,9 +397,9 @@ $(document).ready(function() {
             sRowSelect: "os",
             sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
             aButtons: [
-                { sExtends: "editor_create",sButtonText: "Add Consent", editor: consentEditor },
+                { sExtends: "editor_create", editor: consentEditor },
 
-                { sExtends: "editor_remove",sButtonText: "Revoke Consent", editor: consentEditor },
+                { sExtends: "editor_remove", editor: consentEditor },
                 {
                     sExtends: "collection",
                     sButtonText: "Export to..",
@@ -417,7 +414,36 @@ $(document).ready(function() {
     } );
 
 
+    editor.on( 'initCreate', function ( e, json, data ) {
+        editor.title('Add new Patient');
+    } );
 
+    editor.on( 'initEdit', function ( e, json, data ) {
+        editor.title('Edit Patient');
+    } );
+
+    templatesEditor.on( 'initCreate', function ( e, json, data ) {
+        editor.title('Add new Consent Template');
+    } );
+
+    templatesEditor.on( 'initEdit', function ( e, json, data ) {
+        editor.title('Edit Consent Template');
+    } );
+
+
+    administrationEditor.on( 'initCreate', function ( e, json, data ) {
+        editor.title('Add new User Account');
+    } );
+
+    administrationEditor.on( 'initEdit', function ( e, json, data ) {
+        editor.title('Edit User Account');
+    } );
+
+    consentEditor.on( 'initCreate', function ( e, json, data ) {
+        editor.title('Add new Consent');
+    } );
 } );
+
+
 
 
