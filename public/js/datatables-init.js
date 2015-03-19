@@ -121,11 +121,19 @@ $(document).ready(function() {
             { data: "address" }
         ],
         tableTools: {
+            sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
             sRowSelect: "os",
             aButtons: [
-                { sExtends: "editor_create", editor: editor },
-                { sExtends: "editor_edit",   editor: editor },
-                { sExtends: "editor_remove", editor: editor }
+                { sExtends: "editor_create", sButtonText: "Add Patient", editor: editor },
+                { sExtends: "editor_edit",  sButtonText: "Edit Patient", editor: editor },
+                { sExtends: "editor_remove", sButtonText: "Delete Patient", editor: editor },
+                {
+                    sExtends: "collection",
+                    sButtonText: "Export to..",
+                    sButtonClass: "save-collection",
+                    aButtons: [ 'copy', 'csv', 'xls', 'pdf' ]
+                },
+                'print'
             ]
         }
     } );
@@ -143,11 +151,19 @@ $(document).ready(function() {
             { data: "dateOfUpdate" }
         ],
         tableTools: {
+            sSwfPath: "/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf",
             sRowSelect: "os",
             aButtons: [
-                { sExtends: "editor_create", editor: templatesEditor },
-                { sExtends: "editor_edit",   editor: templatesEditor },
-                { sExtends: "editor_remove", editor: templatesEditor }
+                { sExtends: "editor_create",sButtonText: "Add Template", editor: templatesEditor },
+                { sExtends: "editor_edit", sButtonText: "Edit Template",  editor: templatesEditor },
+                { sExtends: "editor_remove",sButtonText: "Delete Template", editor: templatesEditor },
+                {
+                    sExtends: "collection",
+                    sButtonText: "Export to..",
+                    sButtonClass: "save-collection",
+                    aButtons: [ 'copy', 'csv', 'xls', 'pdf' ]
+                },
+                'print'
             ]
         }
     } );
