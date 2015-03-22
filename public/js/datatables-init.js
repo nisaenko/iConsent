@@ -380,7 +380,7 @@ $(document).ready(function() {
         consentEditor.field( 'consentFormTemplate' ).val(currentConsentTemplate.consentFormTemplate);
     } );
 
-    //administrationEditor.dependant( 'role', 'status', 'whatever' ); { sExtends: "editor_edit",   editor: consentEditor },
+
 
     $('#consents-table').DataTable( {
         dom: 'T<"clear">lfrtip',
@@ -441,6 +441,7 @@ $(document).ready(function() {
 
     consentEditor.on( 'initCreate', function ( e, json, data ) {
         editor.title('Add new Consent');
+
     } );
 } );
 
