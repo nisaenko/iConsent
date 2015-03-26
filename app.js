@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var moment = require('moment');
 
 var app = express();
 
@@ -64,7 +65,20 @@ app.get('/patients', function(req, res) {
     var patients = 'patient';
 
     Patient.find().lean().exec(function (err, patients) {
-        return res.end("{ \"data\": "+JSON.stringify(patients)+", \"options\":[] }");
+
+        var pluginPatientArray = new Array();
+
+        patients.forEach(function(currentPatient) {
+            var arrayElement = currentPatient;
+            arrayElement.registrationDate = moment(currentPatient.registrationDate).format('YYYY-MM-DD');
+            arrayElement.dateOfBirth = moment(currentPatient.dateOfBirth).format('YYYY-MM-DD');
+            pluginPatientArray.push(arrayElement);
+
+        });
+        res.end("{ \"data\": "+JSON.stringify(pluginPatientArray)+", \"options\":[] }");
+
+        //moment('gibberish').format('YYYY MM DD');
+        //return res.end("{ \"data\": "+JSON.stringify(patients)+", \"options\":[] }");
     });
 });
 
