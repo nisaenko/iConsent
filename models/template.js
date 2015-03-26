@@ -11,8 +11,8 @@ var Template = new Schema({
     templateName: String,
     consentFormTemplate: String,
     templateVersion: Number,
-    dateOfUpdate: Date,
-    creationDate: Date
+    dateOfUpdate: String,
+    creationDate: String
 });
 
 module.exports = mongoose.model('Template', Template);

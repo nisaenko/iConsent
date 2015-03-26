@@ -13,7 +13,7 @@ var Consent = new Schema({
     templateName: String,
     templateVersion: Number,
     createdBy: String,
-    creationDate: Date,
+    creationDate: String,
     patientSignature: String
 });
 

@@ -94,7 +94,9 @@ $(document).ready(function() {
             type: "date",
             attr:{
                 readonly:""
-            }
+            },
+            def:        function () { return new Date(); },
+            dateFormat: 'yy-mm-dd'
         }, {
             label: "Updated By:",
             name: "updatedBy",
@@ -105,7 +107,9 @@ $(document).ready(function() {
             type: "date",
             attr:{
                 readonly:""
-            }
+            },
+            def:        function () { return new Date(); },
+            dateFormat: 'yy-mm-dd'
         }, {
             label: "Consent Form Template:",
             name: "consentFormTemplate",
@@ -361,7 +365,9 @@ $(document).ready(function() {
         }, {
             label: "Creation Date:",
             name: "creationDate",
-            type: "date"
+            type: "date",
+            def:        function () { return new Date(); },
+            dateFormat: 'yy-mm-dd'
 
         }, {
             label: "Consent:",
