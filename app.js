@@ -77,8 +77,6 @@ app.get('/patients', function(req, res) {
         });
         res.end("{ \"data\": "+JSON.stringify(pluginPatientArray)+", \"options\":[] }");
 
-        //moment('gibberish').format('YYYY MM DD');
-        //return res.end("{ \"data\": "+JSON.stringify(patients)+", \"options\":[] }");
     });
 });
 
@@ -201,7 +199,18 @@ app.get('/templates', function(req, res) {
     var templates = 'template';
 
     Template.find().lean().exec(function (err, templates) {
-        return res.end("{ \"data\": "+JSON.stringify(templates)+", \"options\":[] }");
+        var pluginTemplateArray = new Array();
+
+        templates.forEach(function(currentTemplate) {
+            var arrayElement = currentTemplate;
+            arrayElement.dateOfUpdate = moment(currentTemplate.dateOfUpdate).format('YYYY-MM-DD');
+            arrayElement.creationDate = moment(currentTemplate.creationDate).format('YYYY-MM-DD');
+            pluginTemplateArray.push(arrayElement);
+
+        });
+        res.end("{ \"data\": "+JSON.stringify(pluginTemplateArray)+", \"options\":[] }");
+
+        //return res.end("{ \"data\": "+JSON.stringify(templates)+", \"options\":[] }");
     });
 });
 
