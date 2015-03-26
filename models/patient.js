@@ -14,8 +14,8 @@ var Patient = new Schema({
     office: String,
     extn: Number,
     age: Number,
-    registrationDate: Date,
-    dateOfBirth: Date
+    registrationDate: String,
+    dateOfBirth: String
 });
 
 module.exports = mongoose.model('Patient', Patient);

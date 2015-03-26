@@ -41,11 +41,15 @@ $(document).ready(function() {
         }, {
             label: "Date of birth:",
             name: "dateOfBirth",
-            type: "date"
+            type: "date",
+            def:        function () { return new Date(); },
+            dateFormat: 'yy-mm-dd'
         }, {
             label: "Registration date:",
             name: "registrationDate",
-            type: "date"
+            type: "date",
+            def:        function () { return new Date(); },
+            dateFormat: 'yy-mm-dd'
         }, {
             label: "Adress:",
             name: "address"
