@@ -83,19 +83,25 @@ $(document).ready(function() {
         }, {
             label: "Created By:",
             name: "createdBy",
-            type: "readonly"
+            type: "hidden"
         }, {
             label: "Creation Date:",
             name: "creationDate",
-            type: "readonly"
+            type: "date",
+            attr:{
+                readonly:""
+            }
         }, {
             label: "Updated By:",
             name: "updatedBy",
-            type: "readonly"
+            type: "hidden"
         }, {
             label: "Date of Update:",
             name: "dateOfUpdate",
-            type: "readonly"
+            type: "date",
+            attr:{
+                readonly:""
+            }
         }, {
             label: "Consent Form Template:",
             name: "consentFormTemplate",
@@ -423,24 +429,33 @@ $(document).ready(function() {
     } );
 
     templatesEditor.on( 'initCreate', function ( e, json, data ) {
-        editor.title('Add new Consent Template');
+        templatesEditor.title('Add new Consent Template');
+
+        //init read-only fields
+        templatesEditor.field( 'templateVersion' ).val(1);
+        templatesEditor.field( 'creationDate' ).val(Date.now());
+
     } );
 
     templatesEditor.on( 'initEdit', function ( e, json, data ) {
-        editor.title('Edit Consent Template');
+        templatesEditor.title('Edit Consent Template');
+
+
+        console.log(templatesEditor.field( 'templateVersion'));
+        templatesEditor.field( 'dateOfUpdate' ).val(Date.now());
     } );
 
 
     administrationEditor.on( 'initCreate', function ( e, json, data ) {
-        editor.title('Add new User Account');
+        administrationEditor.title('Add new User Account');
     } );
 
     administrationEditor.on( 'initEdit', function ( e, json, data ) {
-        editor.title('Edit User Account');
+        administrationEditor.title('Edit User Account');
     } );
 
     consentEditor.on( 'initCreate', function ( e, json, data ) {
-        editor.title('Add new Consent');
+        consentEditor.title('Add new Consent');
 
     } );
 } );
